@@ -22,6 +22,11 @@ MODEL_NAME = "meta-llama/Llama-3.2-1B-Instruct"
 # Change this to customize how the chatbot responds
 SYSTEM_PROMPT = "You are a helpful AI assistant. Be concise and friendly."
 
+# Context management settings
+USE_CONTEXT_HISTORY = True  # Set to False to disable conversation memory (stateless mode)
+MAX_RECENT_MESSAGES = 10    # Number of recent messages to keep in full detail
+MAX_CONTEXT_TOKENS = 4000   # Maximum tokens for context (reserves space for generation)
+
 # ============================================================================
 # LOAD MODEL (NO QUANTIZATION)
 # ============================================================================
@@ -41,8 +46,133 @@ model = AutoModelForCausalLM.from_pretrained(
 )
 
 model.eval()  # Set to evaluation mode (no training)
-print(f"âœ“ Model loaded! Using device: {model.device}")
-print(f"âœ“ Memory usage: ~2.5 GB (FP16)\n")
+print(f"✓ Model loaded! Using device: {model.device}")
+print(f"✓ Memory usage: ~2.5 GB (FP16)")
+print(f"✓ Context history: {'ENABLED' if USE_CONTEXT_HISTORY else 'DISABLED (stateless mode)'}\n")
+
+# ============================================================================
+# CONTEXT MANAGER - Hybrid approach for managing conversation history
+# ============================================================================
+
+class ContextManager:
+    """
+    Manages conversation context using a hybrid approach:
+    - Keeps recent messages in full detail
+    - Summarizes older messages to preserve long-term context
+    - Ensures total context stays within token budget
+    """
+    
+    def __init__(self, max_recent_messages=MAX_RECENT_MESSAGES, max_tokens=MAX_CONTEXT_TOKENS):
+        self.max_recent = max_recent_messages
+        self.max_tokens = max_tokens
+    
+    def manage_context(self, chat_history, tokenizer):
+        """
+        Manage context using hybrid strategy:
+        1. Keep system prompt
+        2. Keep most recent N messages in full
+        3. Summarize older messages
+        4. Ensure total fits in token budget
+        """
+        if not chat_history:
+            return chat_history
+        
+        # Extract system message
+        system_msg = chat_history[0] if chat_history[0]["role"] == "system" else None
+        messages = chat_history[1:] if system_msg else chat_history
+        
+        # If we have few messages, no need to manage
+        if len(messages) <= self.max_recent:
+            return chat_history
+        
+        # Split into old and recent messages
+        old_messages = messages[:-self.max_recent]
+        recent_messages = messages[-self.max_recent:]
+        
+        # Create compact summary of old messages
+        summary = self._create_compact_summary(old_messages)
+        summary_msg = {
+            "role": "system",
+            "content": f"[Previous conversation summary: {summary}]"
+        }
+        
+        # Build test history: system + summary + recent
+        test_history = []
+        if system_msg:
+            test_history.append(system_msg)
+        test_history.append(summary_msg)
+        test_history.extend(recent_messages)
+        
+        # Check if it fits in token budget
+        try:
+            tokens = tokenizer.apply_chat_template(test_history, return_tensors="pt")
+            token_count = tokens.shape[1]
+            
+            if token_count > self.max_tokens:
+                # Still too long - truncate recent messages
+                return self._truncate_to_fit(system_msg, summary_msg, recent_messages, tokenizer)
+            
+            return test_history
+        except Exception as e:
+            # Fallback: just use recent messages
+            if system_msg:
+                return [system_msg] + recent_messages
+            return recent_messages
+    
+    def _create_compact_summary(self, messages):
+        """Create a brief summary of old messages"""
+        user_topics = []
+        key_points = []
+        
+        for msg in messages:
+            if msg["role"] == "user":
+                # Extract first part of user questions/statements
+                content = msg["content"][:50].strip()
+                if content:
+                    user_topics.append(content)
+            elif msg["role"] == "assistant":
+                # Extract key information from assistant responses
+                content = msg["content"][:40].strip()
+                if content:
+                    key_points.append(content)
+        
+        # Build summary
+        summary_parts = []
+        if user_topics:
+            summary_parts.append(f"Topics discussed: {', '.join(user_topics[:5])}")
+        if key_points:
+            summary_parts.append(f"Key points: {', '.join(key_points[:3])}")
+        
+        return " | ".join(summary_parts) if summary_parts else "General conversation"
+    
+    def _truncate_to_fit(self, system_msg, summary_msg, recent_messages, tokenizer):
+        """Truncate messages to fit within token budget"""
+        # Start with system + summary
+        base_history = []
+        if system_msg:
+            base_history.append(system_msg)
+        base_history.append(summary_msg)
+        
+        # Add recent messages one by one until we hit the limit
+        kept_messages = []
+        for msg in reversed(recent_messages):
+            test = base_history + kept_messages + [msg]
+            try:
+                tokens = tokenizer.apply_chat_template(test, return_tensors="pt")
+                if tokens.shape[1] <= self.max_tokens:
+                    kept_messages.insert(0, msg)
+                else:
+                    break
+            except:
+                break
+        
+        return base_history + kept_messages
+
+# Initialize context manager
+context_manager = ContextManager(
+    max_recent_messages=MAX_RECENT_MESSAGES,
+    max_tokens=MAX_CONTEXT_TOKENS
+)
 
 # ============================================================================
 # CHAT HISTORY - This is stored as PLAIN TEXT (list of dictionaries)
@@ -73,6 +203,10 @@ chat_history.append({
 
 print("="*70)
 print("Chat started! Type 'quit' or 'exit' to end the conversation.")
+if USE_CONTEXT_HISTORY:
+    print(f"Context management: ENABLED (max {MAX_RECENT_MESSAGES} recent messages, {MAX_CONTEXT_TOKENS} tokens)")
+else:
+    print("Context management: DISABLED (stateless mode - no conversation memory)")
 print("="*70 + "\n")
 
 while True:
@@ -94,13 +228,24 @@ while True:
     # STEP 2: Add user message to chat history (PLAIN TEXT)
     # ========================================================================
     # The chat history grows with each exchange
-    # We append the new user message to the existing history
-    chat_history.append({
-        "role": "user",
-        "content": user_input
-    })
+    # Handle context history based on USE_CONTEXT_HISTORY flag
+    if USE_CONTEXT_HISTORY:
+        # Add user message to chat history (maintains conversation memory)
+        chat_history.append({
+            "role": "user",
+            "content": user_input
+        })
+        
+        # Manage context using hybrid approach (truncate/summarize if needed)
+        managed_history = context_manager.manage_context(chat_history, tokenizer)
+    else:
+        # Stateless mode: Only use current message (no history)
+        managed_history = [
+            {"role": "system", "content": SYSTEM_PROMPT},
+            {"role": "user", "content": user_input}
+        ]
     
-    # At this point, chat_history looks like:
+    # At this point, managed_history contains:
     # [
     #   {"role": "system", "content": "You are helpful..."},
     #   {"role": "user", "content": "Hello!"},
@@ -117,9 +262,9 @@ while True:
     #   1. Formats the chat history with special tokens (like <|start|>, <|end|>)
     #   2. Converts the formatted text into token IDs (numbers)
     
-    # First, apply_chat_template formats the history and converts to tokens
+    # Apply chat template to managed history and convert to tokens
     input_ids = tokenizer.apply_chat_template(
-        chat_history,                    # Our PLAIN TEXT history
+        managed_history,                 # Managed PLAIN TEXT history
         add_generation_prompt=True,      # Add prompt for assistant's response
         return_tensors="pt"              # Return as PyTorch tensor (numbers)
     ).to(model.device)
@@ -170,13 +315,14 @@ while True:
     # ========================================================================
     # STEP 6: Add assistant response to chat history (PLAIN TEXT)
     # ========================================================================
-    # This is crucial! We add the assistant's response to the history
-    # so the model remembers what it said in future turns
+    # Only add to history if context management is enabled
+    # In stateless mode, we don't store the response
     
-    chat_history.append({
-        "role": "assistant",
-        "content": assistant_response
-    })
+    if USE_CONTEXT_HISTORY:
+        chat_history.append({
+            "role": "assistant",
+            "content": assistant_response
+        })
     
     # Now chat_history has grown again:
     # [

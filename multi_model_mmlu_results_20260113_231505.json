@@ -1,0 +1,166 @@
+{
+  "timestamp": "20260113_231505",
+  "device": "mps",
+  "quantization_bits": null,
+  "subjects": [
+    "astronomy",
+    "business_ethics",
+    "clinical_knowledge",
+    "college_biology",
+    "college_chemistry",
+    "college_computer_science",
+    "college_mathematics",
+    "college_medicine",
+    "college_physics",
+    "computer_security"
+  ],
+  "overall_duration_seconds": 171.9072699546814,
+  "model_results": [
+    {
+      "model_name": "meta-llama/Llama-3.2-1B-Instruct",
+      "results": [
+        {
+          "subject": "astronomy",
+          "correct": 75,
+          "total": 152,
+          "accuracy": 49.34210526315789
+        },
+        {
+          "subject": "business_ethics",
+          "correct": 45,
+          "total": 100,
+          "accuracy": 45.0
+        },
+        {
+          "subject": "clinical_knowledge",
+          "correct": 144,
+          "total": 265,
+          "accuracy": 54.339622641509436
+        },
+        {
+          "subject": "college_biology",
+          "correct": 76,
+          "total": 144,
+          "accuracy": 52.77777777777778
+        },
+        {
+          "subject": "college_chemistry",
+          "correct": 35,
+          "total": 100,
+          "accuracy": 35.0
+        },
+        {
+          "subject": "college_computer_science",
+          "correct": 25,
+          "total": 100,
+          "accuracy": 25.0
+        },
+        {
+          "subject": "college_mathematics",
+          "correct": 24,
+          "total": 100,
+          "accuracy": 24.0
+        },
+        {
+          "subject": "college_medicine",
+          "correct": 79,
+          "total": 173,
+          "accuracy": 45.664739884393065
+        },
+        {
+          "subject": "college_physics",
+          "correct": 17,
+          "total": 102,
+          "accuracy": 16.666666666666664
+        },
+        {
+          "subject": "computer_security",
+          "correct": 58,
+          "total": 100,
+          "accuracy": 57.99999999999999
+        }
+      ],
+      "total_correct": 578,
+      "total_questions": 1336,
+      "overall_accuracy": 43.26347305389221,
+      "timings": {
+        "real_time": 73.86744356155396,
+        "cpu_time": 41.51025868799989,
+        "gpu_time": 73.88346982002258
+      }
+    },
+    {
+      "model_name": "Qwen/Qwen2.5-0.5B",
+      "results": [
+        {
+          "subject": "astronomy",
+          "correct": 76,
+          "total": 152,
+          "accuracy": 50.0
+        },
+        {
+          "subject": "business_ethics",
+          "correct": 48,
+          "total": 100,
+          "accuracy": 48.0
+        },
+        {
+          "subject": "clinical_knowledge",
+          "correct": 138,
+          "total": 265,
+          "accuracy": 52.075471698113205
+        },
+        {
+          "subject": "college_biology",
+          "correct": 54,
+          "total": 144,
+          "accuracy": 37.5
+        },
+        {
+          "subject": "college_chemistry",
+          "correct": 32,
+          "total": 100,
+          "accuracy": 32.0
+        },
+        {
+          "subject": "college_computer_science",
+          "correct": 38,
+          "total": 100,
+          "accuracy": 38.0
+        },
+        {
+          "subject": "college_mathematics",
+          "correct": 26,
+          "total": 100,
+          "accuracy": 26.0
+        },
+        {
+          "subject": "college_medicine",
+          "correct": 78,
+          "total": 173,
+          "accuracy": 45.08670520231214
+        },
+        {
+          "subject": "college_physics",
+          "correct": 29,
+          "total": 102,
+          "accuracy": 28.431372549019606
+        },
+        {
+          "subject": "computer_security",
+          "correct": 61,
+          "total": 100,
+          "accuracy": 61.0
+        }
+      ],
+      "total_correct": 580,
+      "total_questions": 1336,
+      "overall_accuracy": 43.41317365269461,
+      "timings": {
+        "real_time": 53.60290837287903,
+        "cpu_time": 49.93052057600002,
+        "gpu_time": 53.61544060707092
+      }
+    }
+  ]
+}

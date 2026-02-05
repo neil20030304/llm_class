@@ -17,7 +17,7 @@ async def get_weather(location: str) -> str:
 ```
 
 
-4. **Implicit concurrency in ToolNode**: 
+**Implicit concurrency in ToolNode**: 
    - When the model requests multiple tools, ToolNode automatically executes them concurrently
    - No explicit `asyncio.gather()` needed - ToolNode handles it internally
 
@@ -80,16 +80,6 @@ Tools that spend most of their time **waiting** rather than computing benefit mo
    ```
    - **Why beneficial**: Disk I/O latency can be hidden by parallel reads
 
-4. **Web Scraping**
-   ```python
-   @tool
-   async def scrape_webpage(url: str) -> str:
-       """Scrape content from webpage"""
-       async with aiohttp.ClientSession() as session:
-           async with session.get(url) as resp:
-               return await resp.text()
-   ```
-   - **Why beneficial**: Multiple pages can be scraped simultaneously
 
 ### Low-Benefit Tools (Not Worth Parallelizing):
 
@@ -236,59 +226,6 @@ input_node ──(check command)──> call_model                │
 | **Tool→Model Loop** | Hidden | Visible edge: `tools → call_model` |
 | **Visibility** | Black box | White box |
 
-### Internal ReAct Agent Graph (Hidden):
-
-The `create_react_agent()` actually creates its own internal graph:
-
-```
-┌─────> agent ──(has tools)──> tools ─┐
-│         │                            │
-│         │                            │
-└─────────┴──(no tools)──> END <───────┘
-```
-
-This ReAct loop is **encapsulated** inside the `call_react_agent` node.
-
-### Visual Comparison:
-
-**What the user sees:**
-
-```
-ReAct:        [call_react_agent]  <-- Single node
-               (magic happens)
-
-Manual:       [call_model] ──> [tools] ──> [call_model]
-              (explicit loop)
-```
-
-### Key Differences:
-
-1. **Abstraction Level**:
-   - ReAct: High-level abstraction (hide implementation)
-   - Manual: Low-level control (explicit everything)
-
-2. **Debugging**:
-   - ReAct: Harder to debug (hidden internal state)
-   - Manual: Easier to trace (can add logging to each node)
-
-3. **Flexibility**:
-   - ReAct: Fixed pattern (thought → action → observation)
-   - Manual: Custom patterns (parallel tools, conditional logic, etc.)
-
-4. **Graph Complexity**:
-   - ReAct: Simpler outer graph, complex inner graph
-   - Manual: Single complex graph
-
-### Mermaid Diagram Differences:
-
-If you render the graphs:
-- `langchain_react_agent.png` shows the internal ReAct loop
-- `langchain_conversation_graph.png` shows the simple wrapper
-- `langchain_manual_tool_graph.png` shows the full explicit structure
-
-The manual version's graph **directly represents** what's happening, while the ReAct version **abstracts** the tool calling mechanism.
-
----
 
 ## Question 5: When is the LangChain ReAct agent structure too restrictive?
 
@@ -356,33 +293,8 @@ workflow.add_conditional_edges("call_model", route_to_tools, {
 
 **Why ReAct can't do this**: Single fixed tools node, no routing logic
 
-#### 3. **Tool Result Filtering or Transformation**
 
-**Scenario**: Process tool results before sending to model
-
-**Manual ToolNode Approach**:
-```python
-def tools_node_with_filtering(state):
-    """Execute tools and filter results"""
-    # Execute tools
-    tool_results = execute_tools(state)
-    
-    # Filter or transform results
-    filtered = []
-    for result in tool_results:
-        if is_valid(result):  # Custom validation
-            filtered.append(truncate_if_long(result))  # Truncate long results
-        else:
-            filtered.append("Error: Invalid result")
-    
-    return {"messages": filtered}
-
-workflow.add_node("tools", tools_node_with_filtering)
-```
-
-**Why ReAct can't do this**: Tool results go directly to agent, no interception
-
-#### 4. **Multi-Step Tool Workflows**
+#### 3. **Multi-Step Tool Workflows**
 
 **Scenario**: Tools must execute in a specific order
 
@@ -405,24 +317,3 @@ workflow.add_edge("lookup_tool", "call_model")
 
 **Why ReAct can't do this**: Tools are chosen by the agent, not orchestrated
 
-#### 5. **Tool Retry Logic with Exponential Backoff**
-
-**Scenario**: API calls may fail and need retries
-
-**Manual ToolNode Approach**:
-```python
-@tool
-async def api_call_with_retry(query: str) -> str:
-    """API call with automatic retry logic"""
-    for attempt in range(3):
-        try:
-            result = await call_api(query)
-            return result
-        except Exception as e:
-            if attempt < 2:
-                await asyncio.sleep(2 ** attempt)  # Exponential backoff
-            else:
-                return f"Failed after 3 attempts: {e}"
-```
-
-**Why ReAct struggles**: Agent doesn't understand retry logic, may give up too early

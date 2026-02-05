@@ -1,0 +1,168 @@
+============================================================
+TEST 1: Weather Tool
+============================================================
+User: What's the weather like in San Francisco?
+
+--- Iteration 1 ---
+LLM wants to call 1 tool(s)
+  Tool: get_weather
+  Args: {'location': 'San Francisco'}
+  Result: Sunny, 72°F
+
+--- Iteration 2 ---
+Assistant: The weather in San Francisco is sunny with a temperature of 72°F.
+
+
+============================================================
+TEST 2: Query not requiring tool
+============================================================
+User: Say hello!
+
+--- Iteration 1 ---
+Assistant: Hello! How can I assist you today?
+
+
+============================================================
+TEST 3: Multiple weather queries
+============================================================
+User: What's the weather in New York and London?
+
+--- Iteration 1 ---
+LLM wants to call 2 tool(s)
+  Tool: get_weather
+  Args: {'location': 'New York'}
+  Result: Cloudy, 55°F
+  Tool: get_weather
+  Args: {'location': 'London'}
+  Result: Rainy, 48°F
+
+--- Iteration 2 ---
+Assistant: The current weather is as follows:
+
+- **New York**: Cloudy, 55°F
+- **London**: Rainy, 48°F
+
+
+============================================================
+TEST 4: Calculator - Basic Arithmetic
+============================================================
+User: What is 15 multiplied by 7, then add 25 to the result?
+
+--- Iteration 1 ---
+LLM wants to call 1 tool(s)
+  Tool: calculator
+  Args: {'operation': 'add', 'params': '{"a":105,"b":25}'}
+  Result: {"operation": "add", "params": {"a": 105, "b": 25}, "result": 130}
+
+--- Iteration 2 ---
+Assistant: 15 multiplied by 7 is 105. When you add 25 to that result, you get 130.
+
+
+============================================================
+TEST 5: Calculator - Circle Geometry
+============================================================
+User: I have a circular pizza with a radius of 8 inches. What is its area and circumference?
+
+--- Iteration 1 ---
+LLM wants to call 2 tool(s)
+  Tool: calculator
+  Args: {'operation': 'circle_area', 'params': '{"radius":8}'}
+  Result: {"operation": "circle_area", "params": {"radius": 8}, "result": 201.0619298297}
+  Tool: calculator
+  Args: {'operation': 'circle_circumference', 'params': '{"radius":8}'}
+  Result: {"operation": "circle_circumference", "params": {"radius": 8}, "result": 50.2654824574}
+
+--- Iteration 2 ---
+Assistant: The area of the circular pizza with a radius of 8 inches is approximately **201.06 square inches**, and its circumference is approximately **50.27 inches**.
+
+
+============================================================
+TEST 6: Calculator - 3D Geometry (Sphere)
+============================================================
+User: Calculate the volume and surface area of a sphere with radius 5 cm.
+
+--- Iteration 1 ---
+LLM wants to call 2 tool(s)
+  Tool: calculator
+  Args: {'operation': 'sphere_volume', 'params': '{"radius":5}'}
+  Result: {"operation": "sphere_volume", "params": {"radius": 5}, "result": 523.5987755983}
+  Tool: calculator
+  Args: {'operation': 'sphere_surface', 'params': '{"radius":5}'}
+  Result: {"operation": "sphere_surface", "params": {"radius": 5}, "result": 314.159265359}
+
+--- Iteration 2 ---
+Assistant: The volume of a sphere with a radius of 5 cm is approximately \( 523.60 \, \text{cm}^3 \), and the surface area is approximately \( 314.16 \, \text{cm}^2 \).
+
+
+============================================================
+TEST 7: Calculator - Cylinder
+============================================================
+User: A cylindrical water tank has a radius of 2 meters and height of 10 meters. What is its volume?
+
+--- Iteration 1 ---
+LLM wants to call 1 tool(s)
+  Tool: calculator
+  Args: {'operation': 'cylinder_volume', 'params': '{"radius":2,"height":10}'}
+  Result: {"operation": "cylinder_volume", "params": {"radius": 2, "height": 10}, "result": 125.6637061436}
+
+--- Iteration 2 ---
+Assistant: The volume of the cylindrical water tank is approximately 125.66 cubic meters.
+
+
+============================================================
+TEST 8: Calculator - Triangle (Heron's Formula)
+============================================================
+User: Find the area of a triangle with sides 3, 4, and 5 units.
+
+--- Iteration 1 ---
+LLM wants to call 1 tool(s)
+  Tool: calculator
+  Args: {'operation': 'triangle_area', 'params': '{"a":3,"b":4,"c":5}'}
+  Result: {"operation": "triangle_area", "params": {"a": 3, "b": 4, "c": 5}, "result": 6.0}
+
+--- Iteration 2 ---
+Assistant: The area of the triangle with sides 3, 4, and 5 units is \(6.0\) square units.
+
+
+============================================================
+TEST 9: Calculator - Trigonometry
+============================================================
+User: What is the sine and cosine of 45 degrees?
+
+--- Iteration 1 ---
+LLM wants to call 2 tool(s)
+  Tool: calculator
+  Args: {'operation': 'sin', 'params': '{"angle":45,"unit":"degrees"}'}
+  Result: {"operation": "sin", "params": {"angle": 45, "unit": "degrees"}, "result": 0.7071067812}
+  Tool: calculator
+  Args: {'operation': 'cos', 'params': '{"angle":45,"unit":"degrees"}'}
+  Result: {"operation": "cos", "params": {"angle": 45, "unit": "degrees"}, "result": 0.7071067812}
+
+--- Iteration 2 ---
+Assistant: The sine of 45 degrees is approximately \(0.7071\), and the cosine of 45 degrees is also approximately \(0.7071\).
+
+
+============================================================
+TEST 10: Combined Weather + Calculator
+============================================================
+User: What's the weather in Tokyo? Also, if I have a rectangular garden that is 12 meters long and 8 meters wide, what is its area and perimeter?
+
+--- Iteration 1 ---
+LLM wants to call 3 tool(s)
+  Tool: get_weather
+  Args: {'location': 'Tokyo'}
+  Result: Clear, 65°F
+  Tool: calculator
+  Args: {'operation': 'rectangle_area', 'params': '{"length":12,"width":8}'}
+  Result: {"operation": "rectangle_area", "params": {"length": 12, "width": 8}, "result": 96}
+  Tool: calculator
+  Args: {'operation': 'rectangle_perimeter', 'params': '{"length":12,"width":8}'}
+  Result: {"operation": "rectangle_perimeter", "params": {"length": 12, "width": 8}, "result": 40}
+
+--- Iteration 2 ---
+Assistant: The current weather in Tokyo is clear, with a temperature of 65°F. 
+
+For your rectangular garden:
+- The area is 96 square meters.
+- The perimeter is 40 meters.
+

@@ -1,0 +1,16 @@
+# Smart Travel Planner - Environment Variables Template
+# 
+# INSTRUCTIONS:
+# 1. Rename this file to ".env" (exactly)
+# 2. Fill in your actual API keys below
+# 3. Never commit the .env file to git!
+
+# OpenAI API Key
+# Get one at: https://platform.openai.com/api-keys
+OPENAI_API_KEY=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
+
+# OpenWeatherMap API Key  
+# Get one at: https://openweathermap.org/api
+# Note: New keys take ~10 minutes to activate
+OPENWEATHER_API_KEY=y3f24b228d84f4a21fb4aa30b93a36ed0
+

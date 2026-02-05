@@ -1,0 +1,9 @@
+{
+  "model": "llama3.2:latest",
+  "subject": "astronomy",
+  "timestamp": "20260129_144835",
+  "duration_seconds": 32.869539,
+  "accuracy": 59.86842105263158,
+  "correct": 91,
+  "total": 152
+}

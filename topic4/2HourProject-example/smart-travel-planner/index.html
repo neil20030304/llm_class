@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TripCast — Smart Travel Planner</title>
+  <meta name="description" content="AI-powered travel planning. Get weather forecasts, personalized packing lists, and activity recommendations for any destination.">
+  
+  <!-- Favicon (inline SVG — no extra file needed) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌤️</text></svg>">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="header-content">
+      <a href="/" class="logo">
+        <span class="logo-icon">🌤️</span>
+        <span class="logo-text">TripCast</span>
+      </a>
+      
+      <nav class="nav-desktop">
+        <a href="#features">Features</a>
+        <a href="#how-it-works">How it Works</a>
+        <a href="#tech-stack">Tech Stack</a>
+        <a href="#try-it">Try It</a>
+      </nav>
+      
+      <div class="header-actions">
+        <a href="#try-it" class="btn-primary">Plan a Trip</a>
+      </div>
+      
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+  
+  <!-- Mobile Navigation -->
+  <nav class="mobile-nav">
+    <a href="#features">Features</a>
+    <a href="#how-it-works">How it Works</a>
+    <a href="#tech-stack">Tech Stack</a>
+    <a href="#try-it">Try It</a>
+    <div class="mobile-nav-actions">
+      <a href="#try-it" class="btn-primary">Plan a Trip</a>
+    </div>
+  </nav>
+  
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <div class="trust-badge fade-in">
+        <span class="trust-badge-icon">⚡</span>
+        Powered by OpenWeatherMap
+      </div>
+      
+      <h1 class="hero-title fade-in">
+        Never Pack Wrong<br>
+        <span class="accent-word">Again</span>
+      </h1>
+      
+      <p class="hero-subtitle fade-in">
+        Tell us where you're going and when. Our AI analyzes real-time weather 
+        forecasts and generates personalized packing lists and activity 
+        recommendations — so you're always prepared for your adventure.
+      </p>
+      
+      <div class="hero-cta fade-in">
+        <a href="#try-it" class="btn-primary btn-lg">
+          Plan Your Trip
+          <span class="btn-arrow">→</span>
+        </a>
+        <a href="#how-it-works" class="btn-outline btn-lg">
+          See How It Works
+        </a>
+      </div>
+      
+      <div class="hero-stats fade-in">
+        <div class="stat">
+          <span class="stat-value">5-Day</span>
+          <span class="stat-label">Forecasts</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">200K+</span>
+          <span class="stat-label">Cities Supported</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-value">3</span>
+          <span class="stat-label">AI Models</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Floating Elements -->
+    <div class="floating-card floating-card-1 fade-in">
+      <span class="floating-card-icon">🌧️</span>
+      <span>Pack umbrella!</span>
+    </div>
+    <div class="floating-card floating-card-2 fade-in">
+      <span class="floating-card-icon">☀️</span>
+      <span>22°C in Paris</span>
+    </div>
+  </section>
+  
+  <!-- Logo Cloud -->
+  <section class="logo-cloud">
+    <div class="container">
+      <p class="logo-cloud-title">Plan trips to destinations worldwide</p>
+      <div class="logo-grid">
+        <div class="logo-item">🗼 Paris</div>
+        <div class="logo-item">🗽 New York</div>
+        <div class="logo-item">🏯 Tokyo</div>
+        <div class="logo-item">🌉 London</div>
+        <div class="logo-item">🏖️ Miami</div>
+        <div class="logo-item">🏔️ Reykjavik</div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Features Section -->
+  <section id="features" class="section features">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Features</span>
+        <h2 class="section-title fade-in">
+          Everything you need to<br>
+          <span class="accent-word">travel</span> prepared
+        </h2>
+        <p class="section-subtitle fade-in">
+          Our AI assistant handles the weather research so you can focus on the adventure.
+        </p>
+      </div>
+      
+      <div class="feature-grid stagger-children">
+        <div class="feature-card">
+          <div class="feature-icon">🌡️</div>
+          <h3 class="feature-title">5-Day Forecasts</h3>
+          <p class="feature-desc">
+            Get detailed weather predictions including temperature ranges, 
+            rain probability, humidity, and wind conditions for your entire trip.
+          </p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🎒</div>
+          <h3 class="feature-title">Smart Packing Lists</h3>
+          <p class="feature-desc">
+            AI-generated packing recommendations based on actual weather. 
+            From heavy coats to sunscreen — we've got you covered.
+          </p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🎯</div>
+          <h3 class="feature-title">Activity Suggestions</h3>
+          <p class="feature-desc">
+            Rainy day? We suggest museums. Sunny and warm? Time for hiking. 
+            Weather-appropriate activities for every forecast.
+          </p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h3 class="feature-title">Any City, Anywhere</h3>
+          <p class="feature-desc">
+            From Paris to Patagonia, Tokyo to Timbuktu. Our global coverage 
+            means you can plan trips to 200,000+ locations.
+          </p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">💬</div>
+          <h3 class="feature-title">Natural Conversation</h3>
+          <p class="feature-desc">
+            Just tell our AI where you're going in plain English. 
+            No forms to fill out, no apps to download.
+          </p>
+        </div>
+        
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title">Instant Results</h3>
+          <p class="feature-desc">
+            Get your complete travel preparation guide in seconds. 
+            Real-time weather data, instant recommendations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="section how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Process</span>
+        <h2 class="section-title fade-in">
+          Plan your trip in<br>
+          <span class="accent-word">seconds</span>
+        </h2>
+      </div>
+      
+      <div class="steps stagger-children">
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-content">
+            <h3 class="step-title">Tell Us Your Destination</h3>
+            <p class="step-desc">
+              Just type naturally: "I'm traveling to Barcelona from June 15-22" 
+              or "Help me pack for a week in Tokyo."
+            </p>
+          </div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">02</div>
+          <div class="step-content">
+            <h3 class="step-title">We Fetch the Weather</h3>
+            <p class="step-desc">
+              Our AI instantly retrieves accurate 5-day forecasts from 
+              OpenWeatherMap, analyzing temperature, rain, wind, and more.
+            </p>
+          </div>
+        </div>
+        
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-content">
+            <h3 class="step-title">Get Your Personalized Guide</h3>
+            <p class="step-desc">
+              Receive a complete packing list, activity recommendations, 
+              and special weather alerts — all tailored to your trip.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Demo Section -->
+  <section class="section demo">
+    <div class="container">
+      <div class="demo-card fade-in">
+        <div class="demo-header">
+          <span class="demo-badge">Live Example</span>
+          <h3 class="demo-title">"Plan my trip to Paris next week"</h3>
+        </div>
+        <div class="demo-content">
+          <div class="demo-weather">
+            <h4>🌤️ Weather Summary</h4>
+            <p>Paris will experience mild spring weather with temperatures ranging from 15-22°C (59-72°F). Expect partly cloudy skies with a 30% chance of rain mid-week.</p>
+          </div>
+          <div class="demo-columns">
+            <div class="demo-packing">
+              <h4>🎒 Packing List</h4>
+              <ul>
+                <li>Light jacket or cardigan</li>
+                <li>Comfortable walking shoes</li>
+                <li>Compact umbrella</li>
+                <li>Layers (t-shirts + sweater)</li>
+                <li>Sunglasses & sunscreen</li>
+                <li>Light scarf for evenings</li>
+              </ul>
+            </div>
+            <div class="demo-activities">
+              <h4>🎯 Activity Ideas</h4>
+              <ul>
+                <li>Stroll through Luxembourg Gardens</li>
+                <li>Seine River evening cruise</li>
+                <li>Louvre Museum (rainy day backup)</li>
+                <li>Montmartre neighborhood walk</li>
+                <li>Outdoor café hopping</li>
+                <li>Picnic at Champ de Mars</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Tech Stack Section -->
+  <section id="tech-stack" class="section testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Tech Stack</span>
+        <h2 class="section-title fade-in">
+          Built with modern<br>
+          <span class="accent-word">AI tooling</span>
+        </h2>
+      </div>
+      
+      <div class="testimonial-grid stagger-children">
+        <div class="testimonial-card">
+          <div class="testimonial-rating">🤖</div>
+          <blockquote class="testimonial-quote">
+            A LangGraph ReAct agent orchestrates the full planning flow — it decides
+            when to call the weather API and reasons about conditions to generate
+            destination-specific recommendations.
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🦜</div>
+            <div class="testimonial-info">
+              <span class="testimonial-name">LangGraph + LangChain</span>
+              <span class="testimonial-role">Agent Orchestration</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-rating">⚡</div>
+          <blockquote class="testimonial-quote">
+            OpenAI's GPT-4o-mini powers the recommendations with structured
+            JSON output — fast, cheap, and smart enough to know you need an
+            umbrella in London (shocker).
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🧠</div>
+            <div class="testimonial-info">
+              <span class="testimonial-name">OpenAI GPT-4o-mini</span>
+              <span class="testimonial-role">Recommendation Engine</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="testimonial-card">
+          <div class="testimonial-rating">🌍</div>
+          <blockquote class="testimonial-quote">
+            Real-time 5-day forecasts from OpenWeatherMap's global network.
+            Temperature, humidity, wind, rain probability — all the data
+            the AI needs to plan your perfect trip.
+          </blockquote>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🌦️</div>
+            <div class="testimonial-info">
+              <span class="testimonial-name">OpenWeatherMap API</span>
+              <span class="testimonial-role">Weather Data Provider</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Try It Out Section -->
+  <section id="try-it" class="section try-it">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Try It Now</span>
+        <h2 class="section-title fade-in">
+          Plan your trip<br>
+          <span class="accent-word">right now</span>
+        </h2>
+        <p class="section-subtitle fade-in">
+          Enter a destination and see the magic happen.
+        </p>
+      </div>
+      
+      <div class="try-it-container fade-in">
+        <form id="trip-form" class="trip-form">
+          <div class="form-group">
+            <label for="destination">Where are you going?</label>
+            <div class="input-group">
+              <span class="input-icon">🌍</span>
+              <input 
+                type="text" 
+                id="destination" 
+                name="destination" 
+                placeholder="e.g., Tokyo, Paris, New York..."
+                required
+                autocomplete="off"
+              >
+            </div>
+          </div>
+          
+          <div class="form-row form-row-2col">
+            <div class="form-group">
+              <label for="start-date">Arrival Date</label>
+              <div class="input-group">
+                <span class="input-icon">📅</span>
+                <input type="date" id="start-date" name="start_date">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="end-date">Departure Date</label>
+              <div class="input-group">
+                <span class="input-icon">📅</span>
+                <input type="date" id="end-date" name="end_date">
+              </div>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="units">Temperature Units</label>
+              <div class="input-group">
+                <span class="input-icon">🌡️</span>
+                <select id="units" name="units">
+                  <option value="metric">Celsius (°C)</option>
+                  <option value="imperial">Fahrenheit (°F)</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          
+          <button type="submit" class="btn-primary btn-lg btn-block">
+            <span class="btn-text">Get My Travel Plan</span>
+            <span class="btn-loading" hidden>
+              <span class="spinner"></span>
+              AI is planning your trip...
+            </span>
+            <span class="btn-arrow">→</span>
+          </button>
+        </form>
+        
+        <!-- Results Container -->
+        <div id="results" class="results" hidden>
+          <div class="results-header">
+            <h3 id="results-title">🌤️ Your Trip Plan</h3>
+            <button type="button" class="btn-ghost btn-sm" id="clear-results">Clear</button>
+          </div>
+          
+          <div id="weather-results" class="weather-results">
+            <!-- Weather data will be inserted here -->
+          </div>
+          
+          <div class="results-grid">
+            <div class="results-card" id="packing-results">
+              <h4>🎒 Packing Recommendations</h4>
+              <div class="results-content">
+                <!-- Packing list will be inserted here -->
+              </div>
+            </div>
+            
+            <div class="results-card" id="activity-results">
+              <h4>🎯 Activity Suggestions</h4>
+              <div class="results-content">
+                <!-- Activities will be inserted here -->
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Error Container -->
+        <div id="error-container" class="error-container" hidden>
+          <span class="error-icon">⚠️</span>
+          <p id="error-message"></p>
+          <button type="button" class="btn-outline btn-sm" id="retry-btn">Try Again</button>
+        </div>
+      </div>
+      
+      <!-- Quick City Buttons -->
+      <div class="quick-cities fade-in">
+        <p>Quick try:</p>
+        <div class="city-buttons">
+          <button type="button" class="city-btn" data-city="Paris">🗼 Paris</button>
+          <button type="button" class="city-btn" data-city="Tokyo">🏯 Tokyo</button>
+          <button type="button" class="city-btn" data-city="New York">🗽 New York</button>
+          <button type="button" class="city-btn" data-city="London">🌉 London</button>
+          <button type="button" class="city-btn" data-city="Sydney">🦘 Sydney</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- CTA Section -->
+  <section class="section cta">
+    <div class="container">
+      <div class="cta-content fade-in">
+        <h2 class="cta-title">
+          Ready for your next <span class="accent-word">adventure</span>?
+        </h2>
+        <p class="cta-subtitle">
+          Enter a city, pick your dates, and let AI handle the rest.
+        </p>
+        <div class="cta-actions">
+          <a href="#try-it" class="btn-primary btn-lg">
+            Plan Your Trip Now
+            <span class="btn-arrow">→</span>
+          </a>
+          <a href="#how-it-works" class="btn-ghost btn-lg">See How It Works</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="logo">
+            <span class="logo-icon">🌤️</span>
+            <span class="logo-text">TripCast</span>
+          </a>
+          <p class="footer-tagline">
+            Weather-smart travel planning, powered by AI.
+          </p>
+          <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener" aria-label="GitHub">⌘</a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="footer-column">
+            <h4>Explore</h4>
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#tech-stack">Tech Stack</a>
+            <a href="#try-it">Try It</a>
+          </div>
+          <div class="footer-column">
+            <h4>APIs Used</h4>
+            <a href="https://openweathermap.org/api" target="_blank" rel="noopener">OpenWeatherMap</a>
+            <a href="https://platform.openai.com/docs" target="_blank" rel="noopener">OpenAI</a>
+            <a href="https://langchain-ai.github.io/langgraph/" target="_blank" rel="noopener">LangGraph</a>
+          </div>
+          <div class="footer-column">
+            <h4>Project</h4>
+            <a href="https://github.com" target="_blank" rel="noopener">Source Code</a>
+            <a href="#tech-stack">Tech Stack</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 TripCast. Weather data by <a href="https://openweathermap.org" target="_blank" rel="noopener">OpenWeatherMap</a>. AI by <a href="https://openai.com" target="_blank" rel="noopener">OpenAI</a>. Built for CS 6501.</p>
+      </div>
+    </div>
+  </footer>
+  
+  <script src="ui-effects.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

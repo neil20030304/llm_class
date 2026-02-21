@@ -1,0 +1,25 @@
+---
+config:
+  flowchart:
+    curve: linear
+---
+graph TD;
+	__start__([<p>__start__</p>]):::first
+	dequeue_input(dequeue_input)
+	add_user_message(add_user_message)
+	call_model(call_model)
+	tools(tools)
+	summarize_turn(summarize_turn)
+	__end__([<p>__end__</p>]):::last
+	__start__ --> dequeue_input;
+	add_user_message --> call_model;
+	call_model -.-> summarize_turn;
+	call_model -.-> tools;
+	dequeue_input -.-> __end__;
+	dequeue_input -.-> add_user_message;
+	summarize_turn -.-> __end__;
+	summarize_turn -.-> dequeue_input;
+	tools --> call_model;
+	classDef default fill:#f2f0ff,line-height:1.2
+	classDef first fill-opacity:0
+	classDef last fill:#bfb6fc

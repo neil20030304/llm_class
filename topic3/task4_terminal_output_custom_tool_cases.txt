@@ -1,0 +1,60 @@
+============================================================
+TEST 1: Multiple Tools
+============================================================
+User: What is the sin of the difference between the number of i's and the number of s's in Mississippi riverboats
+
+--- Iteration 1 ---
+LLM wants to call 2 tool(s)
+  Tool: count_letter_occurrences
+  Args: {'text': 'Mississippi riverboats', 'letter': 'i'}
+  Result: {"text": "Mississippi riverboats", "letter": "i", "case_sensitive": false, "count": 5}
+  Tool: count_letter_occurrences
+  Args: {'text': 'Mississippi riverboats', 'letter': 's'}
+  Result: {"text": "Mississippi riverboats", "letter": "s", "case_sensitive": false, "count": 5}
+
+--- Iteration 2 ---
+LLM wants to call 1 tool(s)
+  Tool: calculator
+  Args: {'operation': 'sin', 'params': '{"angle":0,"unit":"degrees"}'}
+  Result: {"operation": "sin", "params": {"angle": 0, "unit": "degrees"}, "result": 0.0}
+
+--- Iteration 3 ---
+Assistant: In the phrase "Mississippi riverboats", there are 5 occurrences of the letter 'i' and 5 occurrences of the letter 's'. The difference between these two counts is \(5 - 5 = 0\). 
+
+The sine of 0 degrees is \(0\). 
+
+Therefore, the result is \(0\).
+
+
+
+============================================================
+TEST 2: Multiple Tools
+============================================================
+User: Use text_insights on 'Large language models transform productivity', then calculate the square root of the character count using calculator, and report weather in New York.
+
+--- Iteration 1 ---
+LLM wants to call 2 tool(s)
+  Tool: text_insights
+  Args: {'text': 'Large language models transform productivity'}
+  Result: {"text": "Large language models transform productivity", "character_count": 44, "word_count": 5, "longest_word": "productivity"}
+  Tool: get_weather
+  Args: {'location': 'New York'}
+  Result: Cloudy, 55°F
+
+--- Iteration 2 ---
+LLM wants to call 1 tool(s)
+  Tool: calculator
+  Args: {'operation': 'sqrt', 'params': '{"value": 44}'}
+  Result: {"operation": "sqrt", "params": {"value": 44}, "result": 6.6332495807}
+
+--- Iteration 3 ---
+Assistant: Here are the results:
+
+- **Text Insights**:
+  - Character Count: 44
+  - Word Count: 5
+  - Longest Word: "productivity"
+
+- **Square Root of Character Count**: Approximately 6.63
+
+- **Current Weather in New York**: Cloudy, 55°F.

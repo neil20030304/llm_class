@@ -157,3 +157,75 @@ For your rectangular garden:
 2. **Multi-Tool Queries:** The agent handles queries requiring both weather and calculator tools seamlessly
 3. **Heron's Formula:** Triangle area can be calculated with either base+height or three sides
 4. **JSON I/O:** Clean structured input/output using `json.loads()` and `json.dumps()`
+
+---
+
+## Task 4: Extended Manual Tool Calling (Letter Count + Custom Tool)
+
+**File:** `manual_tool_handling_task4.py`
+
+Additions completed:
+
+- Added `count_letter_occurrences` tool for prompts like "How many s are in Mississippi riverboats?"
+- Added custom third tool `text_insights` (character count, word count, longest word)
+- Refactored tool execution into centralized dispatch via `TOOL_HANDLERS` + `execute_tool_call()`
+
+Terminal output artifacts saved for portfolio:
+
+- `task4_terminal_output_custom_tool_cases.txt` (multiple custom tool prompts)
+
+---
+
+## Task 5: LangGraph Single Long Conversation + Checkpoint Recovery
+
+**File:** `task5.py`
+
+This task rewrites the manual loop into a LangGraph workflow that executes one long multi-turn conversation in a single graph run. The graph uses `ToolNode` for tool execution and a checkpoint backend for state persistence and recovery.
+
+### Mermaid Diagram
+
+```mermaid
+graph TD
+    START([START]) --> dequeue_input
+    dequeue_input -->|has input| add_user_message
+    dequeue_input -->|queue empty| END([END])
+    add_user_message --> call_model
+    call_model -->|tool_calls present| tools
+    call_model -->|final answer| summarize_turn
+    tools --> call_model
+    summarize_turn -->|more inputs| dequeue_input
+    summarize_turn -->|done| END
+```
+
+### Checkpoint and Recovery Notes
+
+- Threaded checkpoints are keyed by `thread_id`
+- Recovery demo intentionally interrupts after turn 1, then resumes from the same `thread_id`
+- Resume continues from saved graph state (remaining queued user inputs + message history)
+
+### Portfolio Trace Files
+
+- `task5_terminal_output_full_and_recovery.txt`
+- `task5_terminal_output_conversation_context.txt`
+- `task5_terminal_output_recovery.txt`
+- `task5_mermaid_diagram.mmd`
+
+### Example Evidence: Context + Tool Use
+
+From the captured run:
+
+- Turn 2 counts `'s'` in `"Mississippi riverboats"`
+- Turn 3 asks to count `'i'` in "the same phrase" and compute sine of the difference
+- The agent reuses context and executes multiple tools (`count_letter_occurrences`, `calculator`) before finalizing
+
+### Example Evidence: Recovery
+
+From the captured run:
+
+- Recovery demo prints `Interrupted. Remaining queued inputs: 3`
+- A resumed run with the same thread continues at Turn 2
+- Finishes with `Recovered and completed. Remaining queued inputs: 0`
+
+### Parallelization Opportunity Not Yet Used
+
+An immediate opportunity is in the tool phase for independent requests in the same turn. In the current graph (`call_model -> tools -> call_model`), the model sometimes issues one tool call at a time across repeated cycles (for example, repeated `calculator` calls in the recovery trace), which serializes work and increases latency. A better strategy would be to aggregate independent tool intents in one model response and execute them together (or fan out into parallel tool-execution branches), then merge results before the next reasoning step. This keeps dependency-sensitive steps sequential, while parallelizing independent subproblems like counting multiple letters or running unrelated weather/text-stat queries in the same turn.

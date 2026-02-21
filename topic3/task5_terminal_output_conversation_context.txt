@@ -1,0 +1,38 @@
+DEMO 1: Single long conversation (no Python agent loop)
+================================================================================
+[TURN 1] User: What's the weather in Tokyo?
+  Model requested tools: ['get_weather']
+  Model final response preview: The weather in Tokyo is clear with a temperature of 65°F.
+  Tool result (get_weather): Clear, 65°F
+Assistant: The weather in Tokyo is clear with a temperature of 65°F.
+[TURN 2] User: How many s are in Mississippi riverboats?
+  Model requested tools: ['count_letter_occurrences']
+  Model final response preview: There are 5 occurrences of the letter "s" in "Mississippi riverboats."
+  Tool result (count_letter_occurrences): {"text": "Mississippi riverboats", "letter": "s", "case_sensitive": false, "count": 5}
+Assistant: There are 5 occurrences of the letter "s" in "Mississippi riverboats."
+[TURN 3] User: Now count i in the same phrase and compute the sine in degrees of i-count minus s-count.
+  Model requested tools: ['count_letter_occurrences', 'count_letter_occurrences']
+  Model requested tools: ['calculator']
+  Model requested tools: ['calculator']
+  Model requested tools: ['calculator']
+  Model final response preview: In the phrase "Mississippi riverboats," there are 5 occurrences of the letter "i" and 5 occurrences 
+  Tool result (count_letter_occurrences): {"text": "Mississippi riverboats", "letter": "i", "case_sensitive": false, "count": 5}
+  Tool result (count_letter_occurrences): {"text": "Mississippi riverboats", "letter": "s", "case_sensitive": false, "count": 5}
+  Tool result (calculator): {"error": "Unknown operation: sine"}
+  Tool result (calculator): {"error": "Missing required parameter: 'angle'"}
+  Tool result (calculator): {"operation": "sin", "params": {"angle": 0}, "result": 0.0}
+Assistant: In the phrase "Mississippi riverboats," there are 5 occurrences of the letter "i" and 5 occurrences of the letter "s." 
+
+The difference between the counts (i-count - s-count) is 0. The sine of 0 degrees is 0.0.
+[TURN 4] User: Run text_insights on the same phrase and tell me the longest word.
+  Model requested tools: ['text_insights']
+  Model final response preview: In the phrase "Mississippi riverboats," the longest word is "Mississippi."
+  Tool result (text_insights): {"text": "Mississippi riverboats", "character_count": 22, "word_count": 2, "longest_word": "Mississippi"}
+Assistant: In the phrase "Mississippi riverboats," the longest word is "Mississippi."
+[TURN 5] User: Using that longest word length, calculate 2 to that power.
+  Model requested tools: ['calculator']
+  Model final response preview: The length of the longest word "Mississippi" is 11. Calculating 2 to the power of 11 gives us 2048.
+  Tool result (calculator): {"operation": "power", "params": {"base": 2, "exponent": 11}, "result": 2048.0}
+Assistant: The length of the longest word "Mississippi" is 11. Calculating 2 to the power of 11 gives us 2048.
+
+================================================================================

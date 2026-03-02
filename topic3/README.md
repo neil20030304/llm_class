@@ -206,8 +206,6 @@ graph TD
 ### Portfolio Trace Files
 
 - `task5_terminal_output_full_and_recovery.txt`
-- `task5_terminal_output_conversation_context.txt`
-- `task5_terminal_output_recovery.txt`
 - `task5_mermaid_diagram.mmd`
 
 ### Example Evidence: Context + Tool Use
@@ -228,4 +226,4 @@ From the captured run:
 
 ### Parallelization Opportunity Not Yet Used
 
-An immediate opportunity is in the tool phase for independent requests in the same turn. In the current graph (`call_model -> tools -> call_model`), the model sometimes issues one tool call at a time across repeated cycles (for example, repeated `calculator` calls in the recovery trace), which serializes work and increases latency. A better strategy would be to aggregate independent tool intents in one model response and execute them together (or fan out into parallel tool-execution branches), then merge results before the next reasoning step. This keeps dependency-sensitive steps sequential, while parallelizing independent subproblems like counting multiple letters or running unrelated weather/text-stat queries in the same turn.
+An opportunity is in the tool phase for independent requests in the same turn. In the current graph (`call_model -> tools -> call_model`), the model sometimes issues one tool call at a time across repeated cycles (for example, repeated `calculator` calls in the recovery trace), which serializes work and increases latency. A better strategy would be to aggregate independent tool intents in one model response and execute them together (or fan out into parallel tool-execution branches), then merge results before the next reasoning step. This keeps dependency-sensitive steps sequential, while parallelizing independent subproblems like counting multiple letters or running unrelated weather/text-stat queries in the same turn.

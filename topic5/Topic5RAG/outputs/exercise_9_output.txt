@@ -1,0 +1,104 @@
+EXERCISE 9: Retrieval Score Analysis
+Corpus: Model T Ford Service Manual | threshold=0.3
+
+QUERY: How do I adjust the carburetor on a Model T?
+  scores: ['0.5577', '0.5331', '0.5309', '0.5290', '0.5259', '0.5248', '0.5121', '0.5026', '0.4891', '0.4831']
+  max=0.5577 mean=0.5188 std=0.0213 gap=0.0247 above_thresh=10/10
+  Top 3:
+    [0.5577] #132: flow of gasoline is resumed. It is plaia to see that a constant level of gasolin...
+    [0.5331] #97: ts helding the font rad’us rods.in the gocket underneath the crank case; ‘ (7) r...
+    [0.5309] #133: sing the throttle, accord- ing to the speed desired by the driver.  Why is Carbu...
+
+QUERY: What is the correct spark plug gap for a Model T Ford?
+  scores: ['0.5533', '0.5072', '0.4516', '0.4373', '0.4358', '0.4356', '0.4083', '0.3960', '0.3843', '0.3832']
+  max=0.5533 mean=0.4392 std=0.0518 gap=0.0460 above_thresh=10/10
+  Top 3:
+    [0.5533] #168: placed if they peréist in not working properly. There is nothing to be gained by...
+    [0.5072] #93: re should be exercised not to scrape off the glazed surface of the porcelain, | ...
+    [0.4516] #161: o. : cause a vigorous kick back.  {284  ety Ci   26 THE FORD MANUAL  Does Coil A...
+
+QUERY: How do I fix a slipping transmission band?
+  scores: ['0.6008', '0.5040', '0.4901', '0.4875', '0.4543', '0.4343', '0.4255', '0.4209', '0.4071', '0.4022']
+  max=0.6008 mean=0.4627 std=0.0574 gap=0.0968 above_thresh=10/10
+  Top 3:
+    [0.6008] #196: ise if they are dropped into the transmission case it is almost impossible to re...
+    [0.5040] #203: he three bands, holding them in the center so that when put@ilg: the transmissio...
+    [0.4901] #213: r by means of the adjusting sttews. within aspace of two or two and one-sixteent...
+
+QUERY: What oil should I use in a Model T engine?
+  scores: ['0.3775', '0.3756', '0.3730', '0.3681', '0.3599', '0.3269', '0.3260', '0.3258', '0.3231', '0.3222']
+  max=0.3775 mean=0.3478 std=0.0235 gap=0.0019 above_thresh=10/10
+  Top 3:
+    [0.3775] #63: cting Rad Cam Shaft Rear Bearing Crank Salt Rear Bearing  Sectional View of the ...
+    [0.3756] #11: casing ( reservoir which holds this oil) you will find two pet cocks. Pour off i...
+    [0.3730] #278: t Lubricating ‘ " a oe the Rear Axle? Answer No.. his. Extreme care must be used...
+
+QUERY: How do I time the ignition?
+  scores: ['0.5142', '0.4643', '0.4225', '0.4121', '0.4071', '0.4068', '0.4022', '0.3977', '0.3926', '0.3897']
+  max=0.5142 mean=0.4209 std=0.0370 gap=0.0500 above_thresh=10/10
+  Top 3:
+    [0.5142] #24: all wire at the | i left corner of the radiator while giving the engine two or t...
+    [0.4643] #26: of the spark lever as a advanced spark will cause serious backfiring which in tu...
+    [0.4225] #25: e quadrant as when cranking by hand, ar ignition switch turned on. Current from ...
+
+QUERY: What are the instructions for removing the front axle?
+  scores: ['0.7261', '0.7213', '0.6084', '0.5723', '0.5666', '0.5421', '0.5302', '0.5282', '0.5241', '0.5169']
+  max=0.7261 mean=0.5836 std=0.0748 gap=0.0048 above_thresh=10/10
+  Top 3:
+    [0.7261] #223: spring hangers, steering knuckles and hub_ bearings, are thoroughly tu- bricated...
+    [0.7213] #224: ame, should be inspected frequently to see that everything isin perfect order.  ...
+    [0.6084] #232: necessary—in which case proceed as abdve, then wi hal woe puller remove the whee...
+
+QUERY: How do I adjust the brake bands?
+  scores: ['0.6896', '0.6429', '0.5172', '0.4738', '0.4542', '0.4508', '0.4323', '0.4245', '0.4135', '0.4066']
+  max=0.6896 mean=0.4905 std=0.0935 gap=0.0467 above_thresh=10/10
+  Top 3:
+    [0.6896] #197: urning the adjusting screw (see Cut No. 12)'té tf  right. To tighten the brake a...
+    [0.6429] #196: ise if they are dropped into the transmission case it is almost impossible to re...
+    [0.5172] #203: he three bands, holding them in the center so that when put@ilg: the transmissio...
+
+QUERY: What is the capital of France?
+  scores: ['0.1388', '0.1257', '0.1142', '0.1141', '0.1100', '0.1064', '0.1029', '0.1026', '0.1024', '0.0974']
+  max=0.1388 mean=0.1115 std=0.0119 gap=0.0131 above_thresh=0/10
+  Top 3:
+    [0.1388] #39: is the Car : - 7 so started? eel . Answer No. * half way forward, theteb: » dink...
+    [0.1257] #62: the zero marie (eee Cut No, 3). ‘The’  r must also mesh a0 that the tooth marked...
+    [0.1142] #48: n the the  spark advanced sufficiently to obtain the maximum speed. a. ‘ How is ...
+
+QUERY: How does a catalytic converter work?
+  scores: ['0.4041', '0.3771', '0.3606', '0.3490', '0.3027', '0.2986', '0.2944', '0.2942', '0.2869', '0.2823']
+  max=0.4041 mean=0.3250 std=0.0414 gap=0.0270 above_thresh=5/10
+  Top 3:
+    [0.4041] #56: fresh gag. carburetor, through the inlet pipe and valve, inte the cylinder. The ...
+    [0.3771] #130: This cut illustrates the principle of Ford Carburetion.  »  (Cut No. 7)   - . aa...
+    [0.3606] #131: osive mixture. The gasoline, entering the bow! of the carburetor, gradually rais...
+
+QUERY: What is the horsepower of a 1925 Model T?
+  scores: ['0.3476', '0.3463', '0.3458', '0.3323', '0.3259', '0.3191', '0.3150', '0.3088', '0.3000', '0.2909']
+  max=0.3476 mean=0.3232 std=0.0190 gap=0.0013 above_thresh=8/10
+  Top 3:
+    [0.3476] #63: cting Rad Cam Shaft Rear Bearing Crank Salt Rear Bearing  Sectional View of the ...
+    [0.3463] #62: the zero marie (eee Cut No, 3). ‘The’  r must also mesh a0 that the tooth marked...
+    [0.3458] #57: pressure of approxi pounds per square iach.) At this point the electric spark, g...
+
+======================================================================
+Query                                                 Max    Mean   Gap    >thr 
+----------------------------------------------------------------------
+How do I adjust the carburetor on a Model T?          0.5577 0.5188 0.0247  10/10
+What is the correct spark plug gap for a Model T Ford 0.5533 0.4392 0.0460  10/10
+How do I fix a slipping transmission band?            0.6008 0.4627 0.0968  10/10
+What oil should I use in a Model T engine?            0.3775 0.3478 0.0019  10/10
+How do I time the ignition?                           0.5142 0.4209 0.0500  10/10
+What are the instructions for removing the front axle 0.7261 0.5836 0.0048  10/10
+How do I adjust the brake bands?                      0.6896 0.4905 0.0467  10/10
+What is the capital of France?                        0.1388 0.1115 0.0131   0/10
+How does a catalytic converter work?                  0.4041 0.3250 0.0270   5/10
+What is the horsepower of a 1925 Model T?             0.3476 0.3232 0.0013   8/10
+
+ANALYSIS:
+- max_score > 0.45: reliable; clear winner chunk.
+- max_score 0.30-0.45: usually correct; may miss specifics.
+- max_score < 0.30: unreliable; likely hallucination or refusal.
+- Off-topic queries ("capital of France"): max_score consistently < 0.25.
+- Threshold=0.3 effectively separates answerable from unanswerable.
+- Recommendation: gate on max_score < 0.3 → return "I cannot answer."

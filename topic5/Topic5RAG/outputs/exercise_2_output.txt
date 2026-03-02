@@ -1,0 +1,186 @@
+EXERCISE 2: Open Model+RAG vs. GPT-4o Mini
+
+
+======================================================================
+CORPUS: Model T Ford Service Manual
+======================================================================
+
+QUERY: How do I adjust the carburetor on a Model T?
+------------------------------------------------------------
+[Qwen 1.5B + RAG]
+To adjust the carburetor on a Model T, you need to follow these steps:
+
+1. **Locate the Adjustment**: Adjust the carburetor's setting using the dial located on the dashboard. This dial allows you to control the amount of fuel entering the carburetor.
+
+2. **Observe Performance**: As the engine runs, pay attention to how smoothly it operates. If the engine seems too rich (too much fuel), advance the throttle slightly to reduce the fuel flow. Conversely, if the engine runs lean (not getting enough fuel), back off the throttle to increase the fuel flow.
+
+3. **Check for Proper Mixture**: Ensure that the exhaust smoke is light and there is no unpleasant smell. A proper mixture should produce minimal smoke and have a mild, non-offensive odor.
+
+4. **Adjust as Necessary**: Continue making small adjustments until the engine runs smoothly without excessive smoke or odors.
+
+By following these steps, you can effectively adjust the carburetor settings to optimize performance and ensure smooth operation of your Model T vehicle. Remember, the goal is to achieve a balanced mixture that provides just the right amount of fuel for optimal engine efficiency and power output.
+
+[GPT-4o Mini (no context)]
+Adjusting the carburetor on a Model T Ford involves a few steps to ensure the engine runs smoothly and efficiently. The Model T typically uses a simple carburetor design, and adjustments can be made to the mixture and idle settings. Here’s a general guide on how to adjust the carburetor:
+
+### Tools Needed:
+- Screwdriver
+- Wrench (if necessary)
+- Tachometer (optional, for more precise adjustments)
+
+### Steps to Adjust the Carburetor:
+
+1. **Warm Up the Engine:**
+   - Start the engine and let it warm up to its normal operating temperature. This ensures that the adjustments you make are accurate.
+
+2. **Locate the Carburetor:**
+   - The carburetor is typically located on the side of the engine. Familiarize yourself with its parts, including the mixture adjustment screw and the idle adjustment screw.
+
+3. **Adjust the Mixture:**
+   - **Find the Mixture Screw:** This is usually located on the side of the carburetor.
+   - **Turn the Screw:** Start by turning the mixture screw clockwise until it lightly seats (do not overtighten). Then, turn it counterclockwise about 1 to 1.5 turns to set a baseline.
+   - **Fine-Tuning:** Start the engine and let it idle. Gradually turn the mixture screw in (clockwise) until the engine begins to run rough, then back it out (counterclockwise) until you find the smoothest idle. This is usually the optimal mixture setting.
+
+4. **Adjust the Idle Speed:**
+   - **Locate the Idle Speed Screw:** This is usually found on the throttle linkage.
+   - **Adjust the Idle Speed:** Turn the idle speed screw to increase or decrease the idle speed. You want the engine to idle smoothly without stalling. A good idle speed for a Model T is typically around 400-600 RPM.
+
+5. **Test Drive:**
+   - After making the
+
+
+QUERY: What is the correct spark plug gap for a Model T Ford?
+------------------------------------------------------------
+[Qwen 1.5B + RAG]
+According to the context, the correct spark plug gap for a Model T Ford is 7/16" or approximately 1.1 grams. This can be seen in the following excerpt:
+
+"The spark plugs should be kept clean (i.e., free from carbon) and should be replaced if they peréist in not working properly. There is nothing to be gained by experimenting with different makes of plugs.." 
+
+This indicates that the recommended gap size for the spark plugs used in a Model T Ford is 7/16". However, please note that this information may have been outdated since the text also mentions "¥;" gap, which seems to refer to an incorrect measurement. For precise measurements, one might need to consult the most recent technical manuals or specifications specific to the Model T Ford production period.
+
+[GPT-4o Mini (no context)]
+The correct spark plug gap for a Model T Ford is typically around 0.025 inches (0.635 mm). However, it's always a good idea to check the specific recommendations for your vehicle, as there may be slight variations based on the year and modifications.
+
+
+QUERY: How do I fix a slipping transmission band?
+------------------------------------------------------------
+[Qwen 1.5B + RAG]
+To fix a slipping transmission band, loosen the lock nut at the tight side of the transmission cover and turn the adjusting screw until the band is snug. Ensure the band fits correctly with the drum notch and avoid over-tightening, which can cause overheating. If necessary, replace the damaged band with a new one. Remember to check for proper alignment and adjust the bands accordingly. If the problem persists, consult a professional mechanic. Based on the given context, here's how to fix a slipping transmission band:
+
+1. Loosen the lock nut at the tight side of the transmission cover.
+2. Turn the adjusting screw until the band is snug.
+3. Ensure the band fits correctly with the drum notch.
+4. Avoid over-tightening, as this can lead to overheating.
+5. Replace the damaged band with a new one if needed.
+6. Check for proper alignment and adjust the bands accordingly.
+7. Consult a professional mechanic if the problem persists. 
+
+This process addresses the issue of fixing a slipping transmission band using the methods described in the context. However, please note that this is a general guide and might require specific adjustments depending on the exact model and condition of the transmission. Always refer to the manufacturer’s manual for precise instructions.
+
+[GPT-4o Mini (no context)]
+Fixing a slipping transmission band can be a complex task, often requiring specialized knowledge and tools. Here are some general steps you can take, but keep in mind that if you're not experienced with automotive repairs, it may be best to consult a professional mechanic.
+
+### Steps to Address a Slipping Transmission Band:
+
+1. **Diagnose the Problem:**
+   - **Check Fluid Levels:** Ensure that the transmission fluid is at the correct level. Low fluid can cause slipping.
+   - **Inspect Fluid Condition:** Look for burnt or dirty fluid. If the fluid is dark or has a burnt smell, it may need to be changed.
+   - **Check for Leaks:** Look for any signs of fluid leaks around the transmission.
+
+2. **Change Transmission Fluid:**
+   - If the fluid is dirty or low, consider changing it. This may involve draining the old fluid, replacing the filter, and refilling with new fluid.
+
+3. **Adjust the Bands:**
+   - Some transmissions have adjustable bands. If your transmission allows for band adjustment, you can follow these steps:
+     - Locate the band adjustment screws (usually found on the transmission case).
+     - Use a wrench to adjust the screws according to the specifications in your vehicle's service manual.
+     - Make small adjustments and test drive the vehicle to see if the slipping improves.
+
+4. **Inspect the Bands:**
+   - If adjustments do not resolve the issue, the bands may be worn or damaged. This typically requires disassembling the transmission to inspect the bands.
+   - Look for signs of wear, fraying, or damage. If the bands are worn out, they will need to be replaced.
+
+5. **Check Other Components:**
+   - Inspect other components of the transmission, such as the clutches and solenoids, as they can also contribute to slipping issues.
+
+6. **Reassemble and Test:**
+   - After making necessary adjustments or replacements, reassemble the transmission and test drive the vehicle to ensure
+
+
+QUERY: What oil should I use in a Model T engine?
+------------------------------------------------------------
+[Qwen 1.5B + RAG]
+According to the given text, for the Model T engine, you should use Mobil Oil or Whittemore's WOT Gear Protect. It advises using these oils at a level with the upper oil plug. Additionally, there is mention of applying oil to the generator housing periodically. However, the specific type of oil recommended is not explicitly stated in the provided context. To ensure proper lubrication, extreme care must be taken during the process.
+
+[GPT-4o Mini (no context)]
+For a Model T engine, it is generally recommended to use a non-detergent motor oil with a viscosity of 30 weight (SAE 30) or 40 weight (SAE 40) for warmer temperatures. Some owners also use straight mineral oil or a specific oil designed for vintage engines. It's important to avoid modern multi-viscosity oils, as they can contain additives that may not be suitable for the older engine designs. Always check the owner's manual or consult with a vintage car expert for specific recommendations based on your engine's condition and operating environment.
+
+
+======================================================================
+CORPUS: Congressional Record Jan 2026
+======================================================================
+
+QUERY: What did Mr. Flood have to say about Mayor David Black in Congress on January 13, 2026?
+------------------------------------------------------------
+[Qwen 1.5B + RAG]
+Mr. Flood recognized Mayor David Black as a paragon of public service and remarkable stewardship. He highlighted Black's contributions over nearly 17½ years as mayor and nearly 5 additional years of service in other roles. The recognition was part of the Congressional Black Caucus's ongoing efforts to carry forward Black's legacy.
+
+[GPT-4o Mini (no context)]
+I'm sorry, but I don't have access to real-time events or specific statements made after my last update in October 2023. Therefore, I can't provide information about Mr. Flood's comments regarding Mayor David Black in Congress on January 13, 2026. You may want to check news sources or official congressional records for that information.
+
+
+QUERY: What mistake did Elise Stefanik make in Congress on January 23, 2026?
+------------------------------------------------------------
+[Qwen 1.5B + RAG]
+The context does not provide any specific information about what mistake Elise Stefanik made in Congress on January 23, 2026. Therefore, the correct response is:
+
+The context does not contain enough information to answer the question. There is no mention of Elise Stefanik or any mistakes she may have made in Congress on January 23, 2026. To answer this question accurately, additional information from the given sources would be needed. 
+
+However, if you're looking for general information about Elise Stefanik's voting record or other aspects related to her role in Congress, please let me know! I can provide that kind of background without referencing specific dates or events. Let me know if you need help finding such information elsewhere.
+
+[GPT-4o Mini (no context)]
+I'm sorry, but I don't have access to real-time news or events that occurred after October 2023. Therefore, I cannot provide information about any mistakes or events involving Elise Stefanik or any other individual in Congress on January 23, 2026. For the most accurate and up-to-date information, I recommend checking reliable news sources.
+
+
+QUERY: What is the purpose of the Main Street Parity Act?
+------------------------------------------------------------
+[Qwen 1.5B + RAG]
+The purpose of the Main Street Parity Act is to modify the criteria for loans for plant acquisition, construction, conversion, or expansion, ensuring that these loans align with the standards set by the 504 standardization programs by establishing an equity requirement of 10%. The act aims to provide a fair and equitable opportunity for small businesses across the country to access capital needed for growth and expansion. Additionally, it seeks to address concerns about the lack of parity between different types of lending programs, particularly those aimed at larger corporations versus smaller businesses. By implementing stricter requirements, the act intends to promote more balanced competition among lenders and better serve the needs of small businesses.
+
+[GPT-4o Mini (no context)]
+The Main Street Parity Act is legislation aimed at addressing disparities in regulatory treatment between community banks and larger financial institutions. Its primary purpose is to ensure that community banks are not subject to overly burdensome regulations that could hinder their ability to compete with larger banks. The act seeks to promote a more level playing field in the financial services industry, particularly for smaller banks that serve local communities.
+
+Key objectives of the Main Street Parity Act include:
+
+1. **Regulatory Relief**: Reducing the regulatory burden on community banks to enable them to operate more efficiently and effectively.
+2. **Encouraging Lending**: Facilitating increased lending to small businesses and consumers by community banks, which are often more attuned to the needs of their local markets.
+3. **Promoting Financial Stability**: Supporting the stability of the banking system by ensuring that community banks can thrive alongside larger institutions.
+
+Overall, the Main Street Parity Act aims to enhance the competitiveness of community banks, thereby supporting local economies and fostering a diverse banking landscape.
+
+
+QUERY: Who in Congress has spoken for and against funding of pregnancy centers?
+------------------------------------------------------------
+[Qwen 1.5B + RAG]
+Ms. Dexter of Oregon has spoken strongly against the proposal to fund crisis pregnancy centers. She stated that "Crisis pregnancy centers are not medical facilities" and called it "shameful" for her Republican colleagues to bring such a bill to the floor. Additionally, Representative Schneider spoke in favor of the bill, stating that he believes these centers help women and that the Biden administration's proposed rule should ensure fairness regarding State spending on these organizations. The context also mentions that there were efforts by the Biden administration to block States from partnering with pregnancy centers due to concerns about protecting women's rights and preventing potential misuse of funds.
+
+[GPT-4o Mini (no context)]
+As of my last update in October 2023, discussions around funding for pregnancy centers have been a topic of debate among various members of Congress, reflecting broader issues related to reproductive rights and healthcare.
+
+**Supporters of Funding:**
+- Many Republican lawmakers have expressed support for funding pregnancy resource centers, often framing them as alternatives to abortion services. They argue that these centers provide essential services such as counseling, parenting classes, and material assistance for pregnant women and new parents.
+
+**Opponents of Funding:**
+- Conversely, many Democratic lawmakers and some progressive members of Congress have opposed funding for these centers. They often argue that some pregnancy centers provide misleading information about reproductive health and may not offer comprehensive healthcare services. Critics also contend that funding these centers diverts resources away from more comprehensive reproductive health services, including access to abortion.
+
+Specific names of lawmakers who have spoken out on this issue may vary over time and depend on the context of specific funding proposals or legislation. For the most current and detailed information, it would be best to check recent congressional records, press releases, or news articles that cover debates and statements made by individual members of Congress regarding pregnancy center funding.
+
+
+OBSERVATIONS:
+- GPT-4o Mini has broader historical automotive knowledge than Qwen 1.5B,
+  so it answers some Model T questions more fluently without RAG — but still
+  cannot reproduce exact 1919 manual values.
+- For CR Jan 2026 (post-cutoff for GPT-4o Mini): model states it doesn't
+  have information, or fabricates proceedings.
+- Qwen 1.5B + RAG consistently beats GPT-4o Mini on corpus-specific queries.
+- GPT-4o Mini wins on general conceptual questions.

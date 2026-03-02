@@ -1,0 +1,237 @@
+EXERCISE 11: Cross-Document Synthesis
+k values: 3, 5, 10
+
+CORPUS: Model T Ford Service Manual
+======================================================================
+
+QUERY: What are ALL the lubrication points on a Model T and what lubricant does each require?
+------------------------------------------------------------
+[k=3] sources=['Ford-Model-T-Man-1919.txt'] scores=['0.5724', '0.5127', '0.4899']
+Based on the given text, there are two main areas where lubrication is required for a Model T:
+
+1. **Rear Axle**: 
+   - Extreme care must be used when lubricating the rear axle.
+   - Semifinished oils like Mobil Oil C or Whittemore's Wart Gear Brotect should be used.
+   - These oils should be placed at an appropriate level relative to the upper oil plug.
+   - A certain amount of lubricant should be added before the truck starts moving.
+
+2. **Commutator**:
+   - Don't be afraid to add a small amount of oil to the commutator every other day—preferably at least once every 200 miles.
+   - This helps prevent rapid wear due to high-speed rotation of the commutator roller.
+
+These are the only specific lubrication points mentioned in the provided text. There is no mention of additional lubrication requirements for other components of the Model T. 
+
+Therefore, the lubrication points and their respective lubricants are:
+
+- **Rear Axle**: Mobil Oil C or Whittemore's Wart Gear Brotect
+- **Commutator**: Small amounts of oil added every other day or at least once every 200 miles
+
+This summary covers all the essential points from the given context regarding lubrication for a Model T.
+
+[k=5] sources=['Ford-Model-T-Man-1919.txt'] scores=['0.5724', '0.5127', '0.4899', '0.4767', '0.4669']
+Based on the provided context, there are several lubrication points for the Model T:
+
+1. **Commutator**: Requires lubrication to prevent rapid wear due to high-speed rotation of the commutator roller.
+   - **Lubricant Required**: Oil should be applied regularly, ideally daily but at least every 200 miles, especially after driving.
+
+2. **Steering Gear**: Can experience excessive play leading to the need for renewing small pinions and brass gears.
+   - **Lubricant Required**: Regular inspection and potential replacement of bushings if needed to reduce vibrations.
+
+3. **Front Spring and Front Spring Perches**: To check for necessary bushings to address any excessive vibration.
+   - **Lubricant Required**: Inspect periodically to ensure proper operation.
+
+4. **Rear Axle**:
+   - **Lubrication Points**:
+     - **Housing Bolt**
+     - **Differential Gear Case Bolt**
+     - **Differential Gear Case Bolt**
+     - **Differential Gear Case Bolt**
+     - **Differential Gear Case Bolt**
+     - **Differential Gear Case Bolt**
+     - **Differential Gear Case Bolt**
+     - **Differential Gear Case Bolt**
+     - **Differential Gear Case Bolt**
+     - **Differential Gear Case Bolt**
+
+The context provides specific lubricants required for these components, including Mobil Oil C and Whittemore's Wart Gear Brotectit for the differential, and mentions using oil to lubricate the commutator roller. However, it does not provide detailed instructions for all lubrication points mentioned in the context. 
+
+To summarize, the context indicates that the commutator requires regular lubrication, while the steering gear, front springs, and rear axle require periodic inspections and potentially replacements of bushings to manage vibrations effectively. For the differential, the use of Mobil Oil C and Whittemore's Wart Gear Brotectit is recommended, though no
+
+[k=10] sources=['Ford-Model-T-Man-1919.txt'] scores=['0.5724', '0.5127', '0.4899', '0.4767', '0.4669', '0.4373', '0.4210', '0.3965', '0.3860', '0.3851']
+Based on the provided context, there are several lubrication points for a Model T automobile, including:
+
+1. **Commutator**: Requires Mobil Oil C or Whittemore's Wart Gear Brotectit. Should be lubricated daily at least once every 200 miles.
+
+2. **Rear Axle**: Requires extreme care due to its high-speed rotation; use Mobil Oil C or Whittemore's Wart Gear Brotectit. Check every 1000 miles or add more grease if needed.
+
+3. **Spark Plugs**: One is located at the top of each cylinder and requires spark plugs. These should be cleaned and oiled regularly.
+
+4. **Steering Gear**: Needs regular inspection of pins and bushings to ensure proper function. Lubricate these components periodically.
+
+5. **Front Spring Perches**: Inspect these periodically to check for bushings necessary to reduce vibrations.
+
+These points highlight the importance of maintaining detailed lubrication schedules to prevent wear and improve overall performance of the vehicle. The context emphasizes the need for careful handling and timely maintenance of critical components like the commutator and differential gears to avoid premature failure.
+
+
+QUERY: Summarize all safety warnings mentioned in the Model T manual.
+------------------------------------------------------------
+[k=3] sources=['Ford-Model-T-Man-1919.txt'] scores=['0.3244', '0.3185', '0.3177']
+The Model T manual contains several safety warnings:
+
+1. Overheating issues can be caused by lack of oil or water, gas mixture being too lean, fan belt problems, carbon deposits in the combustion chamber, spark retardation, gas mixture being too rich, or dirty spark plugs.
+
+2. Engine knocking can occur due to insufficient play in the steering gear, which might require renewing the little pinions and brass internal gears, or checking for necessary bushings under the steering wheel spider.
+
+3. Lubrication should be checked regularly according to the chart provided. 
+
+These warnings highlight common causes of engine failure and suggest preventive maintenance measures to ensure safe operation of the vehicle. However, no specific safety warning about the Camshaft Rear Bearing or Crank Salt Rear Bearing is mentioned in the given text.
+
+[k=5] sources=['Ford-Model-T-Man-1919.txt'] scores=['0.3244', '0.3185', '0.3177', '0.3133', '0.3106']
+The Model T manual mentions several safety warnings:
+
+1. Overheating issues can occur due to lack of oil or water, gas mixture being too lean, fan belt problems, carbon deposits in the combustion chamber, spark plug dirtiness, and knocking sounds.
+
+2. Vibration-related issues might require replacing small pinions and brass gears under the steering wheel spider.
+
+3. Lubrication system maintenance should include checking for proper lubrication levels and ensuring no sediment buildup in the radiator.
+
+4. Safety checks for steering gear should involve inspecting the front springs and perches periodically to see if new bushings are needed to reduce excessive vibrations.
+
+5. Electrical connections must be disconnected properly before making adjustments to avoid short circuits caused by exposed copper wires during operation.
+
+These warnings highlight potential hazards associated with various aspects of the Model T's mechanical and electrical systems. To address these risks, it is important to maintain regular inspections and ensure proper functioning of critical components such as the starting and lighting system, commutators, and lubrication mechanisms. Additionally, thorough disassembly and inspection of the steering gear and its suspension components are recommended to prevent unnecessary wear and tear. Lastly, disconnecting electrical connections safely is crucial to prevent unexpected malfunctions while operating the vehicle.
+
+[k=10] sources=['Ford-Model-T-Man-1919.txt'] scores=['0.3244', '0.3185', '0.3177', '0.3133', '0.3106', '0.2952', '0.2911', '0.2886', '0.2826', '0.2757']
+According to the given text, there are no specific safety warnings mentioned regarding the Model T motor or its maintenance procedures. The document primarily focuses on troubleshooting common issues related to the engine's operation, including overheating, knocking sounds, and starting problems. There are also instructions on how to disconnect certain components, but these do not constitute safety warnings. Therefore, the correct summary would be:
+
+"There are no specific safety warnings mentioned in the Model T manual." 
+
+This conclusion is drawn directly from the last sentence of the provided text, which states "There are no specific safety warnings mentioned in the Model T manual." This statement encapsulates the absence of explicit safety guidelines within the given content.
+
+
+QUERY: What tools are needed for a complete engine tune-up on the Model T?
+------------------------------------------------------------
+[k=3] sources=['Ford-Model-T-Man-1919.txt'] scores=['0.4096', '0.4058', '0.3984']
+To perform a complete engine tune-up on the Model T, you would need:
+
+1. A screwdriver to remove small screws from the engine.
+2. A wrench or socket tool to loosen and remove the Bendix drive shaft.
+3. Lock washers to secure the set screw after turning it into place. 
+
+These tools are essential for accessing and adjusting various components such as the crankshaft, connecting rods, and timing gears, which are part of the engine's operation and maintenance process. The context mentions specific tools like "small screws" and "wrench" but doesn't provide detailed descriptions of all necessary tools beyond those mentioned. Therefore, while some basic tools are implied, a comprehensive list might include additional specialized equipment depending on the exact needs of the repair or adjustment being performed. Based solely on the given text, we can infer that a standard set of hand tools including a screwdriver, wrench, and possibly an adjustable wrench would be sufficient for most tasks involved in a model T engine tune-up. However, more precise recommendations may require consulting technical manuals or professional advice.
+
+[k=5] sources=['Ford-Model-T-Man-1919.txt'] scores=['0.4096', '0.4058', '0.3984', '0.3980', '0.3976']
+To perform a complete engine tune-up on the Model T, you would need:
+
+1. A socket wrench or adjustable wrench for loosening and tightening bolts.
+2. A Phillips-head screwdriver for accessing specific components like the crankshaft bearings.
+3. A flathead screwdriver for general disassembly tasks.
+4. A torque wrench for ensuring proper tightening of fasteners according to specifications.
+5. A pair of pliers for handling small nuts and bolts.
+6. A crowbar or similar tool for turning the Bendix drive shaft if necessary.
+7. A set of paper gaskets for adjusting the meshing of the generator's pinion with the large-time gear.
+8. A scraper or putty knife for cleaning the cylinder head and pistons.
+9. A wire brush or similar tool for removing carbon deposits from the engine surfaces.
+10. An oil rag or cloth for collecting used oil during the process. 
+
+These tools will allow you to access all critical areas of the engine and ensure thorough maintenance as per the instructions provided in the context.
+
+[k=10] sources=['Ford-Model-T-Man-1919.txt'] scores=['0.4096', '0.4058', '0.3984', '0.3980', '0.3976', '0.3962', '0.3961', '0.3908', '0.3885', '0.3863']
+To perform a complete engine tune-up on the Model T, the following tools are typically required:
+
+1. Screwdriver(s)
+2. Allen wrench(es)
+3. Socket wrench(es)
+4. Adjustable wrench(es)
+5. Torque wrench(es)
+6. Flathead screwdriver
+7. Phillips screwdriver
+8. Putty knife
+9. Crew driver
+10. Wire brush
+11. Scrape tool
+12. Needle valve pliers
+13. Gasket removal tool
+14. Fuel gauge
+15. Oil filter wrench
+16. Vacuum gauge
+17. Air cleaner wrench
+18. Spark plug socket
+19. Spark plug wrench
+20. Compression tester
+21. Valve clearance checker
+22. Timing light
+23. Starter motor test light
+24. Battery charger
+25. Voltage tester
+26. Multimeter
+27. Digital multimeter
+28. Diagnostic scanner
+29. Jack
+30. Lug wrench
+31. Wheel chocks
+32. Tire pressure gauge
+33. Brake fluid reservoir filler cap
+34. Brake fluid flush kit
+35. Brake pad replacement kit
+36. Brake rotor replacement kit
+37. Brake drum repair kit
+38. Brake shoe replacement kit
+39. Brake lining replacement kit
+40. Brake caliper replacement kit
+41. Brake hose replacement kit
+42. Brake booster replacement kit
+43. Brake master cylinder replacement kit
+44. Brake fluid replacement kit
+45. Brake pads replacement kit
+46. Brake shoes replacement kit
+47. Brake drums repair kit
+48. Brake rotors repair kit
+49. Brake calipers repair kit
+50. Brake hoses repair kit
+51. Brake booster repair kit
+52. Brake master cylinder repair kit
+53. Brake fluid refill kit
+
+
+QUERY: Compare the procedures for adjusting the front and rear brakes on a Model T.
+------------------------------------------------------------
+[k=3] sources=['Ford-Model-T-Man-1919.txt'] scores=['0.4208', '0.4205', '0.3756']
+The procedure for adjusting the front brakes involves turning the adjusting screw to bring the wheels into proper alignment with lines drawn along their outside edges. This ensures no toe-in occurs, which would lead to increased wear on the wheels. The adjustment must also align these lines properly. For the rear brakes, the process requires removing the transmission cover to access the adjusting nuts on the shafts. Turning them to the right tightens the brake bands, ensuring they don't drag the drums when disengaged, thereby preventing overheating of the motor. In both cases, the hand lever should be positioned correctly relative to the crankshaft or engine's operation state; it should be fully forward during high or low-speed operation but only slightly back when reversing. The pedals themselves control different functions: the left pedal controls the clutch, pressing it forward engages the clutch while pulling it back disengages it. 
+
+This comparison highlights how adjustments for front and rear brakes differ significantly, focusing on wheel alignment and band tension rather than pedal positioning. The context provides detailed instructions for each type of adjustment, emphasizing the importance of precise alignment and proper tensioning to ensure optimal performance and longevity of the braking system.
+
+[k=5] sources=['Ford-Model-T-Man-1919.txt'] scores=['0.4208', '0.4205', '0.3756', '0.3635', '0.3593']
+The instructions for adjusting the front and rear brakes on a Model T are quite similar but have some differences:
+
+For the front brakes:
+1. Adjust the toe-in to ensure proper alignment without excessive wear.
+2. Use an adjusting screw to fine-tune the alignment.
+3. Ensure the adjustment is done correctly to avoid increased wear on the wheels.
+
+For the rear brakes:
+1. Align the wheel drums properly to prevent overheating.
+2. Tighten the brake bands to provide effective braking.
+3. Position the hand lever correctly to control the brakes effectively.
+4. Avoid setting the brakes on the rear wheels unnecessarily.
+5. Operate the brake pedal using both feet, depending on the driving condition.
+
+In summary, while there are similarities in the overall process, specific adjustments need to be made for each type of brake system to achieve optimal performance and safety. The rear brakes require more attention to detail regarding drum alignment and band tension, whereas the front brakes involve toe-in adjustment and possibly tightening the adjusting screw. These differences highlight the importance of understanding the unique requirements of each part of the vehicle's braking system.
+
+[k=10] sources=['Ford-Model-T-Man-1919.txt'] scores=['0.4208', '0.4205', '0.3756', '0.3635', '0.3593', '0.3399', '0.3399', '0.3339', '0.3338', '0.3276']
+The instructions for adjusting the front and rear brakes on a Model T involve several steps:
+
+For the front brakes:
+1. Adjust the front wheels to ensure they "toe-in" at no more than a quarter of an inch.
+2. Ensure the lines drawn along the outside edges of the wheels remain straight in a forward position.
+3. Make adjustments by turning the left end of the spindle connecting rod to draw the wheels into proper alignment.
+4. Tighten the brake and reverse bands by removing the transmission cover and turning the adjusting nuts on the shafts to the right.
+5. Check that the bands do not drag the drums when disengaged, as they exert a braking effect and tend to overheat the motor.
+
+For the rear brakes:
+1. The hand lever should be positioned back as far as possible when cranking the engine or when the car is at rest, ensuring it is only in a vestical position and not far enough backward to act as a brake on the rear wheels when reversing.
+2. The hand lever should be moved forward a distance of approximately 1/4" in relation to high speed to neutral.
+3. The slow speed band should not drag due to being too tight, as this could lead to improper operation of the emergency brake.
+
+Both sets of instructions emphasize maintaining proper wheel alignment and preventing excessive wear on the tires through appropriate adjustment and tightening of components. The primary difference lies in the specific positioning of the hand lever during these adjustments.
+

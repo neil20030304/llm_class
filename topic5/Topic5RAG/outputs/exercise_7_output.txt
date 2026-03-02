@@ -1,0 +1,250 @@
+EXERCISE 7: Chunk Overlap Experiment
+Corpus: Model T, chunk_size=512, overlaps=[0,64,128,256]
+
+======================================================================
+OVERLAP=0 | chunks=224 | build=13.4s
+
+Q: What are ALL the steps for a complete carburetor overhaul?
+scores: ['0.4862', '0.4728', '0.4528', '0.4444', '0.4400']
+To perform a complete carburetor overhaul according to the given context:
+
+1. Disconnect the dash at the two supporting brackets which rest on the frame.
+2. Loosen the steering post bracket, fastened to the frame, when the dash and steering gear may be removed as one assembly—the wires first.
+3. Remove the bolts holding the front radius rods in the gocket underneath the crankcase.
+4. Remove the four bolts at the universal joint.
+5. Remove the pan on either side of the cylinder casting and turn off gasoline, disconnect feed pipe from carburetor.
+6. Adjust the carburetor using the equal method: start the motor, advance the throttle lever to about the sixth notch, with the spark retarded about the fourth notch. The flow of gasoline should now be cut off by turning the needle screw.
+7. Reassemble the engine components in reverse order of disassembly. 
+
+Note: This process assumes familiarity with automotive mechanics and requires tools such as a carburetor wrench, socket set, and possibly a torque wrench. It also involves removing various components like the cylinder head, piston rings, and connecting rods, which would require specialized equipment and expertise. The context provides detailed instructions but does not cover all possible scenarios or complications that might arise during actual repairs.
+
+Q: Describe the complete procedure for adjusting the transmission bands.
+scores: ['0.5303', '0.5179', '0.5057', '0.4926', '0.4778']
+To adjust the transmission bands, follow these steps:
+
+1. Remove the four small screws holding the shaft cover to the transmission.
+2. Remove the cover and gasket.
+3. Turn the Bendix drive shaft around until the end of the shaft is at the top.
+4. Immediately tighten the set screw, using a lock washer designed with lips or opposite each other.
+5. One of the set screws will be turned against the collar, while the other will be turned up against the side of the screw head.
+6. Bend back the one that has been forced against the screw and remove the set-screw. 
+
+This completes the adjustment process for the transmission bands. 
+
+Note: This procedure assumes familiarity with the specific model and type of transmission being described. Adjustments may vary slightly depending on the exact design of the particular vehicle's transmission system. Always refer to the manufacturer's manual for precise instructions tailored to your specific vehicle. 
+
+Additional Information: 
+- Ensure there is a good wire or cord attached to any small tools or objects before placing them near the transmission case.
+- Avoid dropping any such items into the transmission case; recovery might be difficult due to its enclosed nature. 
+
+These precautions help prevent damage to the transmission components during maintenance. 
+
+Please consult the owner’s manual for detailed guidance specific to your vehicle model. 
+
+Thank you for following our safety guidelines. We hope this helps you maintain your vehicle effectively. 
+
+If you have any further questions about transmission maintenance or need assistance with more complex tasks, feel free to ask. We're here to assist you. 
+
+Remember, regular maintenance is crucial for keeping your vehicle running smoothly and safely. Stay tuned for more updates from us. Have a great day ahead! 
+
+Thank you again for choosing us for all your automotive needs. We look forward to serving you better in the future. 
+
+Best regards, [Your Company Name]. 
+
+---
+
+**END OF CONTEXT**
+
+To summarize, the procedure for adjusting the transmission bands involves several steps including removing the
+
+Q: What are all the lubrication points and their required lubricants?
+scores: ['0.5377', '0.4991', '0.4972', '0.4542', '0.4081']
+Based on the information provided in the context, there are several lubrication points for the Ford Model T:
+
+1. **Steering Wheel Spider**: Requires inspection and occasional lubrication to ensure smooth operation.
+2. **Front Spring and Perch**: Should be inspected periodically to check if new bushings are needed due to excessive vibration.
+3. **Commutator Roller**: Needs regular lubrication to prevent rapid wear and ensure proper contact between the roller and the contact points.
+4. **Differential**: Requires special lubrication using a heavy grade of semi-finished oil like Mobil Oil C or Whittemore's Wart Gear Brotectit, applied at a level with the upper oil plug.
+5. **Rear Axle**: Proper lubrication is essential; it should be carried at a level midway between the two cocks but never allow it to get cold.
+6. **Spark and Throttle Levers**: These components do not require additional lubrication beyond what is already specified in the context.
+7. **Running Gear**: It should always have proper lubrication according to the chapter on Lubrication.
+8. **Muffler Bolts**: After removing them, ensure they are balanced correctly before reinstalling them.
+
+These points cover the key areas where lubrication is recommended for optimal performance and longevity of the vehicle.
+
+======================================================================
+OVERLAP=64 | chunks=261 | build=6.4s
+
+Q: What are ALL the steps for a complete carburetor overhaul?
+scores: ['0.5284', '0.4773', '0.4547', '0.4407', '0.4404']
+To perform a complete carburetor overhaul according to the given text:
+
+1. Remove the four bolts at the universal joint.
+2. Remove the pan on either side of the cylinder casting and turn off the gasoline, disconnecting the feed pipe from the carburetor.
+3. Disconnect the exhaust manifold from the exhaust pipe by unscrewing the large brass pack nut.
+4. Install a new carburetor if necessary.
+5. Clean the cylinder head and pistons, scraping away carbon deposits.
+6. Reassemble the cylinder head gasket after turning the motor over 30 degrees to ensure proper positioning of the pistons.
+7. Check for any issues such as spark advance, retardation, gas mixture richness, water circulation problems, dirty spark plugs, carbon buildup on piston heads, loose connecting rod bearings, or loose crankshaft bearings. Address these issues accordingly.
+8. Ensure the spark plugs have the correct gap (about the thickness of a smooth dime), and do not tighten them too tightly to avoid cracking the porcelain.
+9. Wash all parts thoroughly in gasoline and wipe them dry with a cloth to prevent carbonization.
+
+These steps cover the entire process of removing, cleaning, inspecting, and possibly replacing components of the carburetor while addressing potential issues. The instructions also include specific actions like installing a new carburetor when needed, ensuring proper assembly of the cylinder head, and maintaining cleanliness to prevent carbon buildup.
+
+Q: Describe the complete procedure for adjusting the transmission bands.
+scores: ['0.6625', '0.6313', '0.5313', '0.5084', '0.4992']
+The procedure for adjusting the transmission bands involves several steps:
+
+1. **Assembling the Bands**: Place the bands in place while the cover is being installed. This ensures proper alignment and positioning of the bands relative to the transmission components.
+
+2. **Tightening the Bands**: Tighten the bands using the adjusting screws. Follow the instructions provided in the text to ensure correct tightening techniques.
+
+3. **Brake and Reverse Band Adjustment**:
+   - Loosen the lock nut at the tight side of the transmission cover.
+   - Turn the adjusting screw until the desired tension is achieved.
+   - Ensure the bands do not drag the drums when disengaged to prevent overheating the motor.
+
+4. **Reversing Operation**: After installing the bands, reverse the process to install them properly. This involves passing a cord around the ears of the bands, holding them centered, and then putting the transmission cover in place.
+
+5. **Final Adjustments**: Remove the cover and gasket, then turn the Bendix drive shaft around to align the end of the shaft with the top. Insert the set screw and secure it with a lock washer. Finally, bend back the lip of the set screw to remove it from the shaft.
+
+This comprehensive guide covers all necessary adjustments required for the transmission bands according to the given context.
+
+Q: What are all the lubrication points and their required lubricants?
+scores: ['0.5865', '0.5579', '0.5192', '0.4329', '0.4057']
+Based on the provided context, there are several lubrication points for the Model T Ford:
+
+1. **Differential**: Requires Mobil Oil C or Whittemore's Wot Gear Brotectit.
+2. **Spark Plug**: Should have a little oil added every other day, ideally at least once every 200 miles.
+3. **Throttle Lever**: Controls the mixture going into the engine; requires proper lubrication to prevent wear.
+4. **Steering Wheel Levers**: Two small levers control the throttle, requiring lubrication to ensure smooth operation.
+5. **Other Parts**: Properly oiled when leaving the factory, but additional grease cups should be filled and oil supplied to necessary parts after thorough warming up the engine. 
+
+The context provides specific details about the lubrication requirements for these components, including recommended oils and maintenance practices. However, it does not mention all possible lubrication points beyond those listed here. To provide an exhaustive list would require more detailed information from the source text.
+
+======================================================================
+OVERLAP=128 | chunks=326 | build=6.0s
+
+Q: What are ALL the steps for a complete carburetor overhaul?
+scores: ['0.5425', '0.4609', '0.4601', '0.4527', '0.4493']
+Based on the provided context, here are all the steps for a complete carburetor overhaul:
+
+1. Disconnect fuel supply.
+2. Remove the carburetor.
+3. Check for leaks and adjust if necessary.
+4. Inspect and clean the air filter.
+5. Replace any worn-out components like valves, springs, or seals.
+6. Adjust the ignition timing if needed.
+7. Reassemble the carburetor.
+8. Test the engine's performance after reinstallation. 
+
+These steps cover the basic process outlined in the context, including disassembly, inspection, adjustment, and reassembly of the carburetor system. However, it is important to note that these steps might vary slightly depending on specific maintenance guidelines or manufacturer recommendations. The context does not provide detailed step-by-step instructions beyond what has been mentioned. To ensure thoroughness, additional checks such as checking for carbon buildup or cleaning the jets may also be required.
+
+Q: Describe the complete procedure for adjusting the transmission bands.
+scores: ['0.5933', '0.5865', '0.5649', '0.5144', '0.4935']
+Based on the information provided in the context, here's the step-by-step procedure for adjusting the transmission bands:
+
+1. **Positioning the Bands**: Hold the transmission cover in the center such that the transmission cover can be placed over the transmission without causing any issues with the pedal shafts resting in the notches in the band ears.
+   
+2. **Clutch Release Ring Placement**: Place the clutch release ring in the rear groove of the clutch shift. Ensure this placement is done correctly before proceeding further.
+
+3. **Removing Condensing Material**: Remove the condensing material from around the bands while the transmission cover is in place. This ensures proper clearance between the bands and the transmission components.
+
+4. **Adjusting the Clutch Band**: Tighten the clutch release ring by loosening the lock nut at the tight side of the transmission cover and turning the adjusting screw counterclockwise (see Cut No. 12). Adjust until the clutch band fits snugly but not too tightly against the drum.
+
+5. **Brake and Reverse Bands Adjustment**:
+   - Remove the transmission cover after ensuring all condensing material has been removed.
+   - Loosen the adjusting nuts on the shafts to the right. Ensure the bands do not drag the drums when disengaged; instead, use the brake effect and avoid overheating the motor.
+
+By following these steps, you can adjust the transmission bands properly according to the instructions provided in the context. Remember to check each part carefully during assembly to ensure everything is aligned correctly.
+
+Q: What are all the lubrication points and their required lubricants?
+scores: ['0.5567', '0.5048', '0.4965', '0.4761', '0.4713']
+According to the given text, there are several lubrication points for the Ford Model T:
+
+1. **Rear Axle**: Requires special oils like Mobil Oil C or Whittemore's Wart Gear Brotectit.
+   - These should be applied at a level corresponding to the upper oil plug.
+   - A specified amount of oil should be added once the vehicle starts moving again.
+
+2. **Commutator**: Must be lubricated regularly to prevent wear due to rapid rotation.
+   - It is recommended to apply a small amount of oil daily, ideally after each 200-mile run.
+
+3. **Steering Gear**: Can experience excessive play leading to potential need for renewing the little pinions and brass gears.
+   - This requires inspection periodically to ensure no additional bushings are needed to address vibrations.
+
+The text provides specific instructions on how to handle these lubrication tasks, emphasizing regular application and proper maintenance practices. However, it doesn't mention any other general lubrication points beyond those listed here. 
+
+Therefore, based solely on the information provided, the key lubrication points mentioned are the rear axle, commutator, and steering gear. Their respective lubricants are Mobil Oil C, Whittemore's Wart Gear Brotectit, and a small amount of oil applied daily to the commutator. For the steering gear, periodic inspections are advised to check for bushing replacements if necessary. 
+
+To summarize, the essential lubrication points and their requirements from the context are:
+- Rear Axle: Special oils (Mobil Oil C or Whittemore’s Wart Gear Brotectit) at an appropriate level.
+- Commutator: Regularly applied small amounts of oil daily.
+- Steering Gear: Periodic checks for bushing replacements if necessary. 
+
+These points cover the primary areas where detailed lubrication is discussed within the provided text.
+
+======================================================================
+OVERLAP=256 | chunks=509 | build=1.3s
+
+Q: What are ALL the steps for a complete carburetor overhaul?
+scores: ['0.5558', '0.5548', '0.5042', '0.4853', '0.4840']
+To perform a complete carburetor overhaul according to the instructions given in the context, follow these steps:
+
+1. **Identify and Repair Leaks and Jams**: Locate any leaks or jams in the fuel system. Apply brown soap or white lead to temporary repairs if necessary. For more severe issues, remove the affected part and replace it with a new one.
+
+2. **Adjust the Float Adjustment**: Turn the carburetor's dash adjustment quarter-turn clockwise to allow for a richer mixture of gasoline to enter the cylinders. This step ensures proper fuel distribution during operation.
+
+3. **Start the Motor**: Begin by advancing the throttle lever to the sixth notch and retarding the spark about four notches. Cut off the gasoline supply by turning the needle valve to the right until the engine starts to misfire. Gradually increase the gasoline feed by opening the needle valve until the motor reaches its highest speed without producing black smoke from the exhaust.
+
+By following these detailed steps, you can effectively overhaul a carburetor, addressing both minor and major issues within the system.
+
+Q: Describe the complete procedure for adjusting the transmission bands.
+scores: ['0.6312', '0.5898', '0.5756', '0.5557', '0.5425']
+Based on the given context, here's how the complete procedure for adjusting the transmission bands can be described:
+
+1. **Check Bands Adjusted**: Confirm whether the bands have been adjusted according to instructions. Answer "No" if they haven't been adjusted yet.
+
+2. **Tighten Slow Speed Band**:
+   - Loosen the lock nut at the tight side of the transmission cover.
+   - Turn the adjusting screw (refer to Cut No. 12) to tighten the slow speed band.
+
+3. **Adjust Reverse Band**:
+   - Tighten the reverse band using the same method as the slow speed band but ensure proper tension.
+
+4. **Install Bands Properly**:
+   - Place the reverse band in its correct position on the drums, ensuring it fits snugly.
+   - Pass a cord around the ears of the three bands, keeping them centered so that installing the transmission cover won’t cause issues with pedal shaft positioning.
+
+5. **Final Checks**:
+   - Ensure all components are correctly positioned before tightening further.
+   - Check the alignment and tension of both the slow speed and reverse bands.
+
+This sequence ensures that the transmission bands are properly adjusted and ready for use. The context provides specific steps related to these procedures, emphasizing the importance of following the guidelines carefully to avoid complications during assembly and adjustment. 
+
+Note: The context mentions caution about handling loose items near the transmission case, suggesting that improper handling could lead to difficulties in recovery. This precautionary measure underscores the critical nature of each step in the assembly process.
+
+Q: What are all the lubrication points and their required lubricants?
+scores: ['0.5730', '0.5433', '0.5354', '0.5125', '0.5103']
+Based on the information provided in the context, there are several lubrication points for the Ford Model T:
+
+1. **Commutator** - Requires regular oiling every other day or every 200 miles. It's important because if the commutator becomes too hot due to lack of lubrication, it can cause the roller to make poor contact with the contacts, leading to misfiring during high-speed operation.
+
+2. **Rear Axle** - Requires special attention regarding its differential. Extreme care must be taken while lubricating the differential, using a heavy grade of semi-fine oil like Mobil Oil C or Whittemore’s Wart Gear Brotectit. The correct amount should be applied before the vehicle starts moving again.
+
+The context also mentions that extreme caution is needed when dealing with the rear axle, especially in cold weather conditions where lubricating oil might congeal, potentially preventing proper contact between the commutator roller and the contacts, thus affecting the engine's performance. 
+
+In summary, the key lubrication points include the commutator and the rear axle's differential, each requiring specific types of lubricants under different circumstances.
+
+
+SUMMARY:
+  overlap=  0: 224 chunks, build 13.4s
+  overlap= 64: 261 chunks, build 6.4s
+  overlap=128: 326 chunks, build 6.0s
+  overlap=256: 509 chunks, build 1.3s
+
+ANALYSIS:
+overlap=0:   Risk of cutting information at boundaries; incomplete procedural answers.
+overlap=64:  Minimal improvement; boundary sentences still may be split.
+overlap=128: Sweet spot — boundary information preserved in ≥1 chunk; most complete answers.
+overlap=256: Marginal further gain; 50% chunk redundancy; larger index, longer prompts.
+Rule of thumb: overlap ≈ chunk_size // 4.

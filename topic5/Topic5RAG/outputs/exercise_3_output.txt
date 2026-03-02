@@ -1,0 +1,167 @@
+EXERCISE 3: Qwen+RAG vs. GPT-4o (frontier, no context)
+
+======================================================================
+QUERY: How do I adjust the carburetor on a Model T?
+------------------------------------------------------------
+[Qwen 1.5B + RAG] (top score: 0.5577)
+To adjust the carburetor on a Model T, you need to follow these steps:
+
+1. **Locate the Adjustment**: Find the carburetor adjustment located on the dashboard. This is typically done after the engine has been thoroughly worked in.
+
+2. **Observe the Angle**: Observe the angle of the carburetor adjusting rod when the engine runs smoothly. Adjust this angle according to the driver's preference for smooth operation.
+
+3. **Adjust as Necessary**: In cold weather, it might be necessary to turn the adjustment one-quarter turn to the left, especially during cold starts.
+
+4. **Check for Smoke and Odor**: Ensure that the mixture is adjusted correctly by checking for minimal smoke or odor. Properly mixed fuel should produce very little smoke or unpleasant odors.
+
+By following these steps, you can effectively adjust the carburetor to optimize performance and efficiency for your Model T vehicle. Remember, the goal is to achieve a balance between power output and fuel consumption.
+
+[GPT-4o (no context)]
+Adjusting the carburetor on a Ford Model T is a straightforward process, but it requires some understanding of the vehicle's simple yet unique system. The Model T uses a manual choke and mixture adjustment, which is controlled from the driver's seat. Here's a basic guide on how to adjust the carburetor:
+
+1. **Warm Up the Engine**: Start the engine and let it warm up to its normal operating temperature. This ensures that the adjustments you make are accurate for when the car is running.
+
+2. **Locate the Adjustment Control**: The Model T has a mixture adjustment knob on the dashboard, often referred to as the "choke" or "mixture control." This knob is connected to the carburetor via a rod.
+
+3. **Initial Setting**: With the engine running, turn the mixture control knob clockwise until the engine starts to run roughly. This means the mixture is too lean.
+
+4. **Richening the Mixture**: Slowly turn the knob counterclockwise until the engine runs smoothly. This enriches the mixture by allowing more fuel to mix with the air.
+
+5. **Fine-Tuning**: Drive the car at various speeds and adjust the mixture as needed. The goal is to find a setting where the engine runs smoothly without hesitation or backfiring. You may need to adjust the mixture slightly richer for cold starts and leaner once the engine is fully warmed up.
+
+6. **Choke Adjustment**: The choke is also controlled by the same knob. Pulling the knob out increases the fuel mixture for starting, especially when the engine is cold. Push it in gradually as the engine warms up.
+
+7. **Listen and Feel**: Pay attention to how the engine sounds and responds. A well-adjusted carburetor will result in smooth acceleration and steady idle.
+
+8. **Idle Speed Adjustment**: If necessary, adjust the idle speed screw on the carburetor to ensure the engine idles smoothly at the desired RPM.
+
+Remember, the Model T's carburetor is quite simple compared to modern vehicles, and adjustments are often made based on the driver's feel and the engine's response. It's a good idea to make small adjustments and test the vehicle's performance to find the optimal setting.
+
+======================================================================
+QUERY: What is the correct spark plug gap for a Model T Ford?
+------------------------------------------------------------
+[Qwen 1.5B + RAG] (top score: 0.5533)
+The correct spark plug gap for a Model T Ford is 7/16 inch or approximately 1.1 grams. This can be found in the context where it states "The spark plugs should be kept clean (i.e., free from carbon) and should be replaced if they persist in not working properly." Additionally, the text mentions "about the thickness of a smooth dime" as the recommended distance between the sparking points. To achieve this gap, the adjustment needle should be turned to retard the spark around the fourth notch while cutting off the gasoline supply.
+
+[GPT-4o (no context)]
+The correct spark plug gap for a Model T Ford is typically 0.025 inches. It's important to ensure that the gap is set correctly for optimal engine performance. If you're working on a Model T, it's always a good idea to refer to any available service manuals or documentation specific to your vehicle for the most accurate information.
+
+======================================================================
+QUERY: How do I fix a slipping transmission band?
+------------------------------------------------------------
+[Qwen 1.5B + RAG] (top score: 0.6008)
+To fix a slipping transmission band, loosen the lock nut at the tight side of the transmission cover and turn the adjusting screw until the band is snug. Then, adjust the brake and reverse bands by removing the transmission cover and tightening the adjusting nuts on the shafts. Ensure the bands do not drag the drums when disengaged to avoid overheating the motor. Remember to exercise caution and never place anything over or inside the transmission case without securing it with a wire or cord. This precaution helps prevent the items from falling into the transmission case, making recovery difficult. Based on the given context, the steps to fix a slipping transmission band involve loosening the lock nut, adjusting the screw, and properly positioning the bands for optimal performance. However, note that these instructions assume the use of cutaway diagrams for clarity; actual procedures might vary slightly depending on specific model details. To ensure safety and effectiveness, always refer to official service manuals or consult an authorized repair professional. To fix a slipping transmission band, first loosen the lock nut at the tight side of the transmission cover using a wrench. Next, turn the adjusting screw clockwise until the band is snug against the drum. Afterward, adjust the brake and reverse bands by removing the transmission cover and tightening the adjusting nuts on the shafts. Make sure the bands do not drag the drums during disengagement to prevent overheating the motor. Always handle the transmission case with care and secure any loose items with a wire or cord to prevent accidents. Consult official service manuals or seek assistance from a certified mechanic for precise instructions tailored to your vehicle's specifications. To fix a slipping transmission band, follow these steps:
+
+1. Loosen the lock nut at the tight side of the transmission cover using a wrench.
+2. Turn the adjusting screw clockwise until the band is snug against the drum.
+3. Remove the transmission cover and tighten the adjusting nuts on the shafts.
+4. Ensure the bands do not drag the drums during disengagement to prevent overheating the motor
+
+[GPT-4o (no context)]
+Fixing a slipping transmission band involves several steps and requires some mechanical knowledge and tools. If you're not comfortable with car repairs, it's best to consult a professional mechanic. However, if you want to attempt it yourself, here's a general guide:
+
+1. **Safety First**: 
+   - Park the vehicle on a flat surface and ensure it's securely supported with jack stands if you need to get underneath.
+   - Disconnect the battery to prevent any electrical issues.
+
+2. **Check Transmission Fluid**:
+   - Low or dirty transmission fluid can cause slipping. Check the fluid level and condition. If it's low, top it up with the correct type of fluid. If it's dirty or burnt, consider a fluid change.
+
+3. **Adjust the Transmission Band**:
+   - **Locate the Adjustment Screws**: Consult your vehicle's service manual to find the location of the transmission band adjustment screws. These are typically found on the side of the transmission.
+   - **Loosen the Lock Nut**: Use a wrench to loosen the lock nut on the adjustment screw.
+   - **Tighten the Band**: Turn the adjustment screw clockwise to tighten the band. Be cautious not to overtighten, as this can cause damage. The service manual should provide the correct torque specifications.
+   - **Secure the Lock Nut**: Once adjusted, hold the screw in place and tighten the lock nut to secure the adjustment.
+
+4. **Test Drive**:
+   - Reconnect the battery and take the car for a test drive to see if the slipping issue is resolved. Pay attention to any unusual noises or behaviors.
+
+5. **Further Inspection**:
+   - If the problem persists, there may be other issues such as worn-out bands, faulty sensors, or internal damage. In such cases, professional diagnosis and repair are recommended.
+
+6. **Regular Maintenance**:
+   - Regularly check and maintain the transmission fluid and schedule periodic inspections to prevent future issues.
+
+Remember, transmission repairs can be complex, and incorrect adjustments can lead to further damage. If you're unsure, it's always best to seek professional help.
+
+======================================================================
+QUERY: What oil should I use in a Model T engine?
+------------------------------------------------------------
+[Qwen 1.5B + RAG] (top score: 0.3775)
+According to the given text, for the Model T engine, you should use either Mobil Oil C or Whittemore's Wart Gear Brotectit. Additionally, it suggests using a splash system for the generator, where oil from the time gears is used, and occasional drops of oil should be applied to the oil cup located at the end of the generator housing. However, extreme care must be taken during the lubrication process. To ensure thorough lubrication, the oil should be kept at a level midway between the two oil plugs after the engine becomes limbered up. It is important to note that the text does not specify any particular brand but rather recommends specific types of oils for different components. Therefore, while there isn't a single recommended brand, the text provides guidance on what type of oil might be suitable for the Model T engine.
+
+[GPT-4o (no context)]
+For a Ford Model T, it's important to use oil that is appropriate for its vintage engine design. Originally, Model T engines used non-detergent oil, as detergent oils were not available at the time. Here are some recommendations:
+
+1. **Non-Detergent Oil**: Use a non-detergent oil with a viscosity rating of SAE 30. This type of oil is closer to what was originally used and is suitable for the splash lubrication system of the Model T.
+
+2. **Detergent Oil**: Some Model T owners use modern detergent oils, such as SAE 10W-30 or SAE 10W-40, especially if the engine has been rebuilt or is in good condition. Detergent oils help keep the engine cleaner by suspending contaminants, but they can also dislodge sludge in older engines that haven't been rebuilt, which might cause issues.
+
+3. **Multi-Viscosity Oil**: In colder climates, a multi-viscosity oil like 10W-30 can be beneficial for easier starting and better lubrication at lower temperatures.
+
+4. **Zinc Additives**: Consider using an oil with higher zinc content (ZDDP) or adding a zinc additive, as the Model T engine has flat tappets that benefit from the extra protection zinc provides.
+
+Always ensure the oil you choose is suitable for the specific condition and history of your Model T engine. If in doubt, consulting with a vintage car specialist or a Model T club can provide additional guidance tailored to your specific vehicle.
+
+======================================================================
+QUERY: What did Mr. Flood have to say about Mayor David Black in Congress on January 13, 2026?
+------------------------------------------------------------
+[Qwen 1.5B + RAG] (top score: 0.6123)
+Mr. Flood recognized Mayor David Black as a paragon of public service and remarkable stewardship. He highlighted Black's contributions over nearly 171/2 years of service, emphasizing his leadership role in guiding Papillion into a thriving economic hub. The speaker commended Black for his dedication and thanked him for his outstanding public service.
+
+[GPT-4o (no context)]
+I'm sorry, but I cannot provide real-time or future information, including events or statements that might occur after my last update in October 2023. If you have questions about past events or need information up to that date, feel free to ask!
+
+======================================================================
+QUERY: What mistake did Elise Stefanik make in Congress on January 23, 2026?
+------------------------------------------------------------
+[Qwen 1.5B + RAG] (top score: 0.4841)
+The context does not provide any information about what mistake Elise Stefanik made in Congress on January 23, 2026. There is no mention of such an event or action by Elise Stefanik in the given text. Therefore, the correct response is:
+
+The context does not contain enough information to answer the question. There is no mention of Elise Stefanik making a mistake in Congress on January 23, 2026. 
+
+To directly address the instruction without quoting from the source, the answer can be stated as follows:
+
+Based solely on the information provided in the context, there is insufficient data to determine if Elise Stefanik made a mistake in Congress on January 23, 2026. The context does not include details about any actions taken by Elise Stefanik during that specific day. To accurately respond to the question, additional information beyond the provided text would be necessary.
+
+[GPT-4o (no context)]
+I'm sorry, but I cannot provide real-time or future information. My knowledge is up to date only until October 2023, and I cannot predict or report on events beyond that date.
+
+======================================================================
+QUERY: What is the purpose of the Main Street Parity Act?
+------------------------------------------------------------
+[Qwen 1.5B + RAG] (top score: 0.7074)
+The purpose of the Main Street Parity Act is to modify the criteria for loans for plant acquisition, construction, conversion, or expansion to align them with the 504 standardization programs by setting an equity requirement at 10%. This act aims to provide a new opportunity for Americans across the country to step forward and bring these loans in line with the existing 504 standardization programs. Additionally, it is described as a clear fix that reflects the current economic and technological realities. The act is supported by both parties and emphasizes the importance of supporting small business owners and their employees.
+
+[GPT-4o (no context)]
+The Main Street Parity Act is a legislative proposal aimed at addressing the competitive imbalance between online retailers and brick-and-mortar stores, particularly in the context of sales tax collection. Traditionally, online retailers were not required to collect sales tax unless they had a physical presence in the state where the consumer resides. This gave them a pricing advantage over local businesses, which are required to collect sales tax on all transactions.
+
+The purpose of the Main Street Parity Act is to level the playing field by requiring online retailers to collect and remit sales taxes in the same way that physical stores do, regardless of whether they have a physical presence in the state. This is intended to ensure fair competition, support local businesses, and increase state and local tax revenues.
+
+It's important to note that the specifics of such legislation can vary, and the act may have different provisions or requirements depending on the legislative context and any amendments made during the legislative process.
+
+======================================================================
+QUERY: Who in Congress has spoken for and against funding of pregnancy centers?
+------------------------------------------------------------
+[Qwen 1.5B + RAG] (top score: 0.7453)
+The speaker who spoke in favor of funding pregnancy centers was Ms. Dexter of Oregon. She addressed the House for 5 minutes and rose today in strong opposition to the proposal Republicans voted on to take money from families in need and divert it to anti-abortion crisis pregnancy centers. On the other hand, the speaker who spoke against funding pregnancy centers was Mr. Schneider. He criticized his Republican colleagues for bringing this bill to the floor to funnel money to so-called crisis pregnancy centers and away from programs that truly help families in need. Additionally, he mentioned that the Biden administration had issued a proposed rule that singled out pregnancy centers and preemptively suggested State spending on these organizations would no longer be allowable. The Biden rule was never finalized, but there is a need to ensure future administrations do not pursue similar actions. H.R. 6945 ensures fairness.
+
+[GPT-4o (no context)]
+In the U.S. Congress, the issue of funding for pregnancy centers, particularly those that are anti-abortion or "crisis pregnancy centers," has been a topic of debate, with opinions often divided along party lines.
+
+**Supporters of Funding:**
+- **Republican Members:** Generally, many Republican members of Congress have supported funding for pregnancy centers. They argue that these centers provide essential services and support for pregnant women, offering alternatives to abortion and assisting with prenatal care, parenting classes, and material support.
+
+**Opponents of Funding:**
+- **Democratic Members:** Many Democratic members of Congress have opposed funding for these centers, particularly those that are anti-abortion. They argue that some of these centers may provide misleading information about abortion and reproductive health, and they advocate for funding to go towards comprehensive reproductive health services that include access to abortion.
+
+Specific names of members who have spoken out can vary over time as debates arise and as new bills are introduced. For the most current and specific information, it would be best to look at recent congressional records or statements from individual members regarding specific bills or funding proposals related to pregnancy centers.
+
+
+OBSERVATIONS:
+- GPT-4o general knowledge: strong for historical Model T facts, but
+  cannot produce 1919 manual exact values or CR 2026 specifics.
+- Web search evidence: GPT-4o (API) has no live search; post-cutoff
+  queries are refused or hallucinated.
+- RAG advantage: exact corpus quotes, post-cutoff events, proprietary data.
+- Frontier model advantage: conceptual explanations, contextual background.

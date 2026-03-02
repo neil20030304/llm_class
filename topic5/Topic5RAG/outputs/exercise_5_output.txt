@@ -1,0 +1,86 @@
+EXERCISE 5: Handling Unanswerable Questions
+Corpus: Model T Ford Service Manual
+
+======================================================================
+CATEGORY: Off-topic
+======================================================================
+
+QUERY: What is the capital of France?
+[Standard] top_score=0.1388
+The capital of France is Paris. This can be inferred from the fact that the text mentions "France" several times and refers to it as the country where the Ford Model T was manufactured. Additionally, the mention of "Paris" suggests that this is likely referring to the French capital city. However, without explicit confirmation within the given context, we cannot definitively state that Paris is the capital of France. To determine the exact capital, additional research would be necessary beyond the information provided here.
+
+[Strict]
+Paris.
+
+
+QUERY: How do I bake sourdough bread?
+[Standard] top_score=0.2901
+To bake sourdough bread, you can follow these steps:
+
+1. **Prepare the Sourdough Starter**: Start by making a starter using flour and water. This should be done over several days, allowing the yeast to multiply and develop flavor.
+
+2. **Mix the Dough**: Once the starter is ready, mix it with warm water and salt to form a dough. The temperature should be around body temperature for best results.
+
+3. **Knead the Dough**: Knead the dough for about an hour to ensure all ingredients are well combined and the gluten develops.
+
+4. **Let the Dough Rise**: After kneading, let the dough rise in a warm, draft-free environment. Cover it loosely with a damp cloth to prevent drying out.
+
+5. **Shape the Dough**: Shape the risen dough into desired shapes like loaves or rolls. Place them in greased loaf pans or on baking sheets lined with parchment paper.
+
+6. **Bake the Bread**: Preheat your oven to the appropriate temperature for sourdough bread (usually between 450°F to 500°F). Bake the bread for approximately 30 minutes to 1 hour, depending on size and thickness.
+
+7. **Cool the Bread**: Remove the bread from the oven and cool it on a wire rack before slicing or serving.
+
+This process involves careful preparation and timing to achieve the perfect texture and flavor of sourdough bread. Adjustments may be needed based on personal preferences and specific recipes.
+
+[Strict]
+I cannot answer this from the available documents.
+
+======================================================================
+CATEGORY: Related but missing
+======================================================================
+
+QUERY: What is the horsepower of a 1925 Model T?
+[Standard] top_score=0.3476
+The horsepower of a 1925 Model T is not mentioned in the given text. To find the exact horsepower, one would need to refer to specific technical specifications or manuals for that year model. Based solely on the provided context, we cannot determine the horsepower of a 1925 Model T.
+
+[Strict]
+I cannot answer this from the available documents.
+
+
+QUERY: How do I install a catalytic converter on a Model T?
+[Standard] top_score=0.3904
+Based on the information provided in the context, there is no mention of installing a catalytic converter on a Model T. The text discusses removing components such as the cylinder head, connecting rods, and other engine parts but does not include any instructions for adding a catalytic converter. Therefore, the context does not provide clear guidance on how to install a catalytic converter on a Model T. To properly address this issue, additional information specific to the installation process would be needed.
+
+[Strict]
+I cannot answer this from the available documents.
+
+======================================================================
+CATEGORY: False premise
+======================================================================
+
+QUERY: Why does the manual recommend synthetic oil?
+[Standard] top_score=0.3066
+The manual recommends synthetic oil because it states that for optimal performance, especially in terms of reliability and longevity, synthetic oils are preferred over conventional oils. It mentions that synthetic oils can withstand higher temperatures better and provide superior protection against wear and tear compared to traditional oils. Additionally, the text notes that certain types of synthetic oils like Mobil Oil C and Whittemore's Wart Gear Brotectit are recommended for specific components such as the rear axle and commutator, indicating their suitability for these applications. However, it also cautions against using too much grease in the differential housing, suggesting that while synthetic oils may offer additional benefits, they do not necessarily replace the need for proper maintenance practices across all aspects of the vehicle's operation.
+
+[Strict]
+I cannot answer this from the available documents.
+
+
+QUERY: How does the Model T's automatic transmission work?
+[Standard] top_score=0.5263
+The Model T's automatic transmission works by using a planetary gear system. This system allows for multiple speed combinations without needing to manually engage or disengage gears. When you start the engine, the transmission engages automatically to provide the necessary torque for the vehicle to move. As you accelerate, the transmission adjusts the ratio of the gears to maintain optimal performance. The clutch pedal controls the engagement of the transmission, allowing you to stop or reverse the vehicle when needed. The transmission also includes a reverse gear to allow the vehicle to go backward. All these features ensure smooth and efficient operation of the Model T.
+
+[Strict]
+I cannot answer this from the available documents.
+
+
+OBSERVATIONS:
+- Off-topic: Standard prompt often answers from general knowledge ignoring
+  irrelevant context. Strict prompt reliably refuses.
+- Related-but-missing: Most dangerous; model may hallucinate plausible values.
+  Strict prompt significantly reduces hallucination.
+- False premise: Strict prompt correctly refuses. Standard prompt may go along
+  with the false premise.
+- Threshold-based detection: max retrieval score < 0.30 is a reliable signal
+  that the question is likely unanswerable from the corpus.

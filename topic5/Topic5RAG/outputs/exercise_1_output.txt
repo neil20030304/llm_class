@@ -1,0 +1,94 @@
+EXERCISE 1: RAG vs. No-RAG Comparison
+Model: Qwen/Qwen2.5-1.5B-Instruct
+
+
+======================================================================
+CORPUS: Model T Ford Service Manual
+======================================================================
+
+QUERY: How do I adjust the carburetor on a Model T?
+------------------------------------------------------------
+[WITHOUT RAG]
+To adjust the carburetor on a Model T, you need to follow these steps:
+
+1. **Remove the Air Filter**: First, remove the air filter from the carburetor. This is usually done by loosening the screws or clips that hold it in place.
+
+2. **Disconnect Fuel Line**: Next, disconnect the fuel line from the carburetor. You can do this by unscrewing the fuel cap or removing the fuel line clamp.
+
+3. **Inspect Carburetor Components**: Once disconnected, inspect all components of the carburetor for any signs of wear or damage. Look for clogged jets, dirty or worn out parts, and ensure that everything is clean and properly aligned.
+
+4. **Adjust Idle Speed**: The idle speed adjustment involves adjusting the throttle body screw located at the top of the carburetor. Turn the screw counterclockwise to increase idle speed and clockwise to decrease it. Start with a small amount of turn (usually 0.5-1 degree) and test the engine's idle speed. If necessary, repeat until you achieve the desired idle speed.
+
+5. **Adjust Throttle Position Sensor**: Adjust the throttle position sensor (TPS) if needed. The TPS is typically located near the carburetor housing. It has two wires connected to it; one connects to the ignition coil and the other to the engine control unit (ECU). Use a multimeter to measure the resistance between these two points when the throttle is fully open. If the resistance is too high, reduce the TPS setting slightly. Conversely, if the resistance is too low, increase the TPS setting.
+
+6. **Reassemble**: After making adjustments, reattach the fuel line and replace the air filter. Make sure all connections are tight before starting the engine.
+
+7. **Test Engine Performance**: Finally, start the engine and check its performance. Ensure that the engine runs smoothly without hesitation and that there are no unusual noises or vibrations.
+
+Remember,
+
+[WITH RAG]
+To adjust the carburetor on a Model T, follow these steps:
+
+1. **Locate the Adjustment**: Find the carburetor adjustment located on the dashboard. This is typically marked as "Answer No. 43" in the given sources.
+
+2. **Observe the Angle**: When the engine runs smoothly, note the position of the carburetor adjusting rod. This indicates the optimal setting for fuel delivery.
+
+3. **Adjust if Necessary**: If the engine's performance is suboptimal, you may need to make adjustments. According to the context, this involves turning the adjustment one-quarter turn to the left in cold weather conditions.
+
+4. **Check for Proper Mixture**: Ensure that the mixture is correct by observing the color and smell of the exhaust smoke. A proper mixture should produce minimal smoke or odor.
+
+By following these steps, you can effectively adjust the carburetor to optimize the engine's performance on a Model T. Remember, the key is to maintain a balance between air and fuel to achieve smooth operation without excessive smoke or unpleasant smells.
+  Sources: [0.558] Ford-Model-T-Man-1919.txt, [0.533] Ford-Model-T-Man-1919.txt, [0.531] Ford-Model-T-Man-1919.txt
+
+
+QUERY: What is the correct spark plug gap for a Model T Ford?
+------------------------------------------------------------
+[WITHOUT RAG]
+The correct spark plug gap for a Model T Ford was 0.5mm (20 thousandths of an inch). This was the standard gap used by most Model T owners, and it was also the recommended gap in the original Ford service manual.
+
+The Model T Ford, introduced in 1908, was one of the first automobiles to be mass-produced on an assembly line. It was designed with simplicity and economy in mind, making it accessible to many people who could not afford more expensive vehicles at that time. One of the key features of the Model T was its reliable engine design, which included a simple ignition system using a single-cylinder engine and a magneto-driven coil.
+
+The spark plug gap is crucial for the proper operation of the ignition system in any internal combustion engine. A gap that is too wide or too narrow can result in poor spark formation, leading to incomplete combustion and potential engine damage. For the Model T Ford, the correct spark plug gap of 0.5mm ensures optimal performance and longevity of the engine.
+
+It's worth noting that while the 0.5mm gap was the standard for most Model T owners, there were some variations in practice. Some enthusiasts have reported using slightly different gaps, such as 0.47mm or 0.6mm, but these are less common and may require adjustments based on specific engine conditions and maintenance practices. However, the 0.5mm gap remains the most widely accepted and recommended setting for Model T engines.
+
+[WITH RAG]
+The correct spark plug gap for a Model T Ford is 7/8 inch or approximately 1. 9 millimeters. This can be found in the text where it states "The spark plugs should be kept clean (i.e., free from carbon) and should be replaced if they peréist in not working properly. There is nothing to be gained by experimenting with different makes of plugs.." Additionally, the text mentions that the distance between the sparking points should be 7/8 inch, which aligns with the recommended gap size.
+  Sources: [0.553] Ford-Model-T-Man-1919.txt, [0.507] Ford-Model-T-Man-1919.txt, [0.452] Ford-Model-T-Man-1919.txt
+
+
+QUERY: How do I fix a slipping transmission band?
+------------------------------------------------------------
+[WITHOUT RAG]
+To fix a slipping transmission band, you can try the following steps:
+
+1. Check for worn or damaged components: Inspect the transmission bands and other moving parts to identify any signs of wear or damage that may be causing the slipping.
+
+2. Replace faulty components: If you find any worn or damaged parts, replace them with new ones to ensure proper functioning of the transmission system.
+
+3. Adjust the tension: Ensure that the tension on the transmission bands is set correctly. Over-tightening or under-tightening can cause slipping.
+
+4. Lubricate the transmission: Apply lubricant to the transmission bands and other moving parts to reduce friction and prevent slipping.
+
+5. Realign the transmission: If the slipping issue persists after addressing the above points, it might indicate an alignment problem. Have the transmission professionally aligned by a mechanic.
+
+6. Consider professional repair: If none of these solutions work, it's best to consult a professional mechanic who can diagnose and repair the issue more effectively.
+
+Remember, always prioritize safety when working on your vehicle, especially if you're not experienced in handling transmission systems. It's advisable to seek assistance from a qualified technician if you're unsure about any part of the process.
+
+[WITH RAG]
+To fix a slipping transmission band, loosen the lock nut at the tight side of the transmission cover and turn the adjusting screw until the band is snug. Then, adjust the brake and reverse bands by removing the transmission cover and tightening the adjusting nuts on the shafts. Ensure the bands do not drag the drums when disengaged to avoid overheating the motor. Remember to check for proper adjustment of the clutch release ring and differential gears. Always exercise caution when handling the transmission case, especially with loose items, as dropping them can make recovery nearly impossible. Based on the given sources, these steps provide guidance on how to address a slipping transmission band issue. However, please consult a professional mechanic for more detailed instructions. To fix a slipping transmission band, loosen the lock nut at the tight side of the transmission cover and turn the adjusting screw until the band is snug. Then, adjust the brake and reverse bands by removing the transmission cover and tightening the adjusting nuts on the shafts. Ensure the bands do not drag the drums when disengaged to avoid overheating the motor. Remember to check for proper adjustment of the clutch release ring and differential gears. Always exercise caution when handling the transmission case, especially with loose items, as dropping them can make recovery nearly impossible. Based on the given sources, these steps provide guidance on how to address a slipping transmission band issue. However, please consult a professional mechanic for more detailed instructions.
+  Sources: [0.601] Ford-Model-T-Man-1919.txt, [0.504] Ford-Model-T-Man-1919.txt, [0.490] Ford-Model-T-Man-1919.txt
+
+
+QUERY: What oil should I use in a Model T engine?
+------------------------------------------------------------
+[WITHOUT RAG]
+For the original Model-T Ford, you would need to use 10% cottonseed or peanut oil. This was because of the lack of an internal combustion system and the fact that the car had no spark plugs.
+The answer is 10% cottonseed or peanut oil.
+
+[WITH RAG]
+According to the given text, for the Model T engine, you should use Mobil Oil or Whittemore's Wart Gear Protectant. Specifically, it states: "An 4-1 heavy grade, such as Mobil Oil C or Whittemore’s Wart Gear Protectant, should be used." Additionally, it mentions that the generator should be lubricated by a splash of oil from the time gears. So, the recommended oils for the Model T engine include Mobil Oil C and Whittemore's Wart Gear Protectant.
+  Sources: [0.377] Ford-Model-T-Man-1919.txt, [0.376] Ford-Model-T-Man-1919.txt, [0.373] Ford-Model-T-Man-1919.txt
+

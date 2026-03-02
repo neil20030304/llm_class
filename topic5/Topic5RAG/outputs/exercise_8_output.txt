@@ -1,0 +1,149 @@
+EXERCISE 8: Chunk Size Experiment
+Corpus: Model T, overlap=chunk_size//4
+
+======================================================================
+CHUNK_SIZE=128 (overlap=32) | chunks=1177 | build=3.6s
+
+Q: How do I adjust the carburetor on a Model T?
+scores: ['0.6593', '0.6523', '0.6150', '0.6006', '0.6001']
+To adjust the carburetor on a Model T, first determine the point where the motor runs at its maximum speed. Then, use the equal method to regulate the carburetor. Start the motor and observe the angle of the car's wheels to find an economical reduction in the quantity of gasoline in the mixture by turning the carburetor adjustment to the right as far as possible without causing the engine to stall or run rough. The throttle lever adjusting screw can also be adjusted for better fuel economy. Remember to test the adjustments after making them to ensure they meet the desired performance criteria.
+
+Q: What is the correct spark plug gap for a Model T Ford?
+scores: ['0.5847', '0.5798', '0.5635', '0.5550', '0.5137']
+According to the given text, the correct spark plug gap for a Model T Ford engine is "Too close" or "too close gap". However, it's important to note that this statement seems to contradict itself as it mentions "Too close" but then says "gap", implying there might have been an error in the original document. The most accurate interpretation would likely be "Too close gap" referring to the distance between the spark plug and the cylinder wall, rather than the overall gap within the spark plug itself. 
+
+The instruction specifically asks for the correct gap without any additional qualifiers like "Too close," so the closest we can get from the provided text is "Too close gap." This implies that the actual recommended gap size was closer to what could be considered normal or standard rather than extremely narrow. 
+
+Therefore, while the exact numerical value isn't specified, the context suggests that the typical or recommended gap for a Model T Ford spark plug was somewhere around the middle range of acceptable values. To provide a more precise answer, one would need to refer to official specifications or technical manuals for Ford engines from that era. Based solely on the given context, the gap appears to be described as being "too close," indicating it may have been set slightly tighter than ideal but still within a reasonable tolerance. 
+
+Given these considerations, the most appropriate response aligning with the instructions provided is:
+
+**Answer:** Too close gap. 
+
+This reflects the general idea conveyed by the text about setting the spark plug gap appropriately for a Model T Ford engine, acknowledging that the specific numerical value wasn't detailed in the given context. 
+
+Please let me know if you'd like me to clarify anything further! I'm here to help ensure accuracy in my responses. 
+
+Thank you for your patience. 🚀🔧✨
+
+If you have any other questions or need assistance with something else, feel free to ask! I'm happy to assist. ✨🚗💡
+
+Let me know if you require clarification or another approach to
+
+Q: How do I fix a slipping transmission band?
+scores: ['0.5471', '0.5420', '0.5278', '0.5276', '0.5158']
+To fix a slipping transmission band, you should first loosen the lock nut at the tight side of the transmission cover. Then, adjust the tightening screws on the shafts to the right until the band is properly aligned with the gears. This will ensure that the band functions correctly and prevents slipping during operation. The process involves removing the transmission cover as described in the text.
+
+Q: What oil should I use in a Model T engine?
+scores: ['0.5028', '0.4660', '0.4512', '0.4489', '0.4280']
+For the Model T engine, you should use denatured gasoline instead of regular gasoline. Additionally, drain the dirty oil from the crankcase and clean it with kerosene according to the instructions given in "An". Furthermore, remove any ash of oil from the time gears. There's also an oil cup located at the end of the generator housing where a few drops of oil should be added. To lubricate the starting motor, use the Ford splash system, which is similar to how the engine and transmission are lubricated. Based on the context, denatured gasoline appears to be the preferred choice for the Model T engine. The other oils mentioned (kerosene for cleaning, ashes removal, and oil cups) seem to be maintenance steps rather than specific oils for the engine itself. Therefore, while these items are important for maintaining the vehicle, they do not directly address what oil should be used in the engine. The primary recommendation seems to be denatured gasoline. However, if there were more detailed specifications or additional recommendations regarding oils, those would need to be considered alongside the denatured gasoline advice. 
+
+This answer synthesizes key points from the text related to oil usage in the Model T engine, including its preference for denatured gasoline over regular gasoline, and mentions some general maintenance steps involving oil but does not provide a definitive list of oils suitable for the engine. It acknowledges that the context does not explicitly state what oil should be used in the engine but suggests denatured gasoline as the primary oil type. The rest of the context discusses maintenance procedures without specifying individual oils for the engine. Thus, the most accurate answer based solely on the provided context is that denatured gasoline should be used in the Model T engine. Other oils mentioned in the text serve different purposes such as cleaning and lubrication during maintenance.
+
+Q: How do I time the ignition system?
+scores: ['0.5700', '0.5129', '0.4635', '0.4571', '0.4544']
+The ignition system should be timed by adjusting the position of the spark and throttle levers according to the manufacturer's specifications for optimal performance. This involves ensuring that the engine starts smoothly without hesitation and operates efficiently throughout its operation. To achieve this, one must first ensure that the key is inserted into the switch located at the driver's feet. Afterward, pull on the small wire at the left corner of the radiator while giving the engine two or three quarter turns using the starter handle. These steps help align the timing correctly, allowing the engine to start reliably each time. It's crucial to consult the vehicle's manual for precise instructions tailored to the specific model being used.
+
+======================================================================
+CHUNK_SIZE=512 (overlap=128) | chunks=326 | build=0.6s
+
+Q: How do I adjust the carburetor on a Model T?
+scores: ['0.5577', '0.5331', '0.5309', '0.5290', '0.5259']
+To adjust the carburetor on a Model T, you need to follow these steps:
+
+1. **Locate the Adjustment**: Find the adjustment mechanism for the carburetor. This can typically be done by looking for a small dial or knob near the dashboard.
+
+2. **Observe the Engine Performance**: As mentioned in the context, after the car has been thoroughly worked in, the driver should check the position of the carburetor adjusting rod. Adjustments may be needed if the engine runs poorly or produces excessive smoke or odors.
+
+3. **Adjust as Necessary**: Based on the observed performance, make adjustments to the carburetor. For example, turning the adjustment one-quarter turn to the left might be required in cold weather conditions.
+
+Remember, this process requires careful observation and understanding of the engine's behavior under different conditions. Always ensure safety when working on any vehicle, especially early model cars like the Model T.
+
+Q: What is the correct spark plug gap for a Model T Ford?
+scores: ['0.5533', '0.5072', '0.4516', '0.4373', '0.4358']
+The correct spark plug gap for a Model T Ford is 7/16" or approximately 1.1 cm. This can be determined from the following excerpt:
+
+"The spark plugs should be kept clean (i.e., free from carbon) and should be replaced if they peréist in not working properly. There is nothing to be gained by experimenting with different makes of plugs.." 
+
+This statement directly mentions the recommended gap size for the spark plugs. To ensure proper ignition, the gap must be precisely 7/16" wide, which corresponds to 1.1 cm. Therefore, the correct gap size for the Model T Ford's spark plugs is 7/16".
+
+Q: How do I fix a slipping transmission band?
+scores: ['0.6008', '0.5040', '0.4901', '0.4875', '0.4543']
+To fix a slipping transmission band, loosen the lock nut at the tight side of the transmission cover and turn the adjusting screw until the band is snug but not too loose. Ensure there's space between the band and the transmission cover for easy installation. Tighten the brake and reverse bands by removing the transmission cover and adjusting the tightening screws on the shafts. Make sure the bands don't drag the drums when disengaging, as this can cause overheating of the motor. If necessary, install an additional pair of clutch discs instead of turning the adjusting screws further. Always ensure safety precautions, such as attaching a wire or cord to any object placed inside the transmission case. Remember, dropping items into the transmission case is very difficult to retrieve. Based on the given context, fixing a slipping transmission band involves loosening the lock nut, adjusting the screw, and ensuring proper spacing between the band and the transmission cover. It also suggests using caution with objects placed inside the transmission case. However, the specific method mentioned in the text for tightening the brake and reverse bands requires removal of the transmission cover and adjustment of tightening screws on the shafts. This approach seems more detailed and precise compared to simply loosening the lock nut and adjusting the screw. Therefore, the most accurate way to fix a slipping transmission band according to the context would involve both steps: loosening the lock nut and adjusting the screw, followed by adjusting the tightening screws on the shafts. This ensures a secure fit and prevents excessive wear on the transmission components. To prevent slipping, always check the alignment and adjust the tension of the bands properly. Additionally, avoid placing anything heavy or sharp inside the transmission case, as it could damage the internal mechanisms. In summary, the key steps include loosening the lock nut, adjusting the screw, and then fine-tuning the tightening screws on the shafts to achieve the correct tension. This comprehensive approach helps maintain the integrity of the transmission system.
+
+Q: What oil should I use in a Model T engine?
+scores: ['0.3775', '0.3756', '0.3730', '0.3681', '0.3599']
+According to the context, for the Model T engine, you should use either Mobil Oil C or Whittemore's Wart Gear Brotectit. Additionally, it suggests using a splash system for the generator, where oil from the time gears is used. It advises applying occasional drops of oil to the oil cup located at the end of the generator housing. However, there is no mention of specific types of oil beyond these general recommendations. To ensure proper lubrication, extreme care must be taken during the process.
+
+Q: How do I time the ignition system?
+scores: ['0.4627', '0.3881', '0.3859', '0.3791', '0.3661']
+To time the ignition system properly, you should place the spark and throttle levers in the same position as when cranking by hand, ensuring the ignition switch is turned on. Additionally, use current from either the battery or the magneto for ignition. However, if using the magneto, pay special attention to the correct position of the spark lever to prevent backfiring, which could damage the starter shaft. When priming the carburetor, ensure the primer rod is fully inserted into the cylinder before turning the key to start the engine. This helps clear any carbon deposits and ensures smooth operation. Remember, the primary goal is to ignite the fuel-air mixture at the optimal moment to achieve maximum engine performance.
+
+======================================================================
+CHUNK_SIZE=2048 (overlap=512) | chunks=73 | build=0.6s
+
+Q: How do I adjust the carburetor on a Model T?
+scores: ['0.5622', '0.5031', '0.4813', '0.4601', '0.4105']
+To adjust the carburetor on a Model T, you should follow these steps:
+
+1. Ensure the engine is cooled sufficiently before making any adjustments.
+2. Locate the carburetor adjustment screw on the dashboard.
+3. Turn the adjustment screw counterclockwise to increase fuel flow.
+4. Observe the engine's performance and listen for any unusual noises.
+5. Adjust the screw further clockwise if needed to improve performance.
+6. Repeat this process until the engine runs smoothly and efficiently.
+
+Remember, the goal is to achieve a balanced mixture that provides optimal performance while minimizing emissions. Regular maintenance and tuning are crucial for maintaining the best efficiency of your Model T vehicle.
+
+Q: What is the correct spark plug gap for a Model T Ford?
+scores: ['0.4910', '0.4483', '0.4399', '0.4148', '0.3798']
+The correct spark plug gap for a Model T Ford is 7/16". According to the text, "The correct clearance is naturally half way between these two measurements." Here, 7/16" is mentioned as the measurement for the gap, and it's stated that this value is "about the thickness of a smooth dime," which aligns with the 7/16" measurement given. To confirm, we refer to the instruction: "The spark plugs should be kept clean (¢., free from carbon) and should be replaced if they persist in not working properly."
+
+Therefore, the correct answer is 7/16". 
+
+This answer directly addresses the question without any external sources beyond what was provided in the context. The key information is found in the sentence stating the correct clearance is halfway between 1-32" and 1-64", which corresponds to 7/16" inches. The instruction further confirms that this measurement is appropriate for keeping the spark plugs clean and replacing them if necessary. Thus, there is sufficient information within the context to provide a clear and accurate response to the question posed. 
+
+It's worth noting that while the context provides detailed instructions on how to perform maintenance tasks related to the ignition system, including cleaning spark plugs, it does not explicitly state the exact gap size for spark plugs. However, based on the reference to the thickness of a dime, which is approximately 7/16" inch, it can be inferred that this is likely the intended gap size for the spark plugs in a Model T Ford. The context emphasizes the importance of maintaining the spark plugs' cleanliness and ensuring they function correctly, but it doesn't specify the exact gap size. Nonetheless, the inference drawn from the dime-sized measurement is consistent with the typical specifications for spark plug gaps in such engines. 
+
+Given the available information and the need to respond accurately to the specific question asked, the most reliable and precise answer is indeed 7/1
+
+Q: How do I fix a slipping transmission band?
+scores: ['0.4163', '0.4144', '0.3984', '0.3383', '0.3287']
+To fix a slipping transmission band, loosen the lock nut at the tight side of the transmission cover and turn the adjusting screw to the right. Ensure the bands do not drag the drums when disengaged, as they exert a brake effect and tend to overheat the motor. Additionally, adjust the foot brake so that sudden pressure stops the car immediately or slide the rear wheels in case of emergency. Replace the worn-out bands with new ones for smooth engagement without causing jerky movements. The lining is inexpensive and available at any Ford service station at a small cost.
+
+Q: What oil should I use in a Model T engine?
+scores: ['0.3511', '0.3450', '0.3415', '0.3069', '0.2904']
+According to the instructions given in the context, you should pour medium light, high-grade gasoline into the crank case through the breather pipe at the front of the engine. After pouring, leave the cock open until it stops running before closing it. Under no circumstances should the oil get contaminated or mixed with anything else. Additionally, ensure that all other parts of the car are properly oiled when leaving the factory. However, it's recommended to fill all grease cups and provide oil to essential parts, following the guidelines in Chapter on Lubrication.
+
+Q: How do I time the ignition system?
+scores: ['0.3474', '0.3314', '0.3145', '0.3120', '0.3110']
+To time the ignition system, follow these steps:
+
+1. Start the engine and let it warm up completely.
+2. Adjust the carburetor adjustment screw to allow a richer mixture of gasoline to enter the cylinders.
+3. Hold out the primer rod while turning the crankshaft quickly several times.
+4. Place the spark plug wire in the appropriate notch on the quadrant.
+5. Advance the throttle lever slightly to increase fuel flow.
+6. Turn on the magneto switch and start the engine.
+7. Let the engine idle for a moment to ensure everything is working correctly.
+8. Check the exhaust for any signs of misfire or knocking.
+9. If there's no misfire, adjust the spark plug gap according to the manufacturer's specifications.
+10. Repeat the process for each cylinder, checking for misfire in each one.
+11. Once you've identified the faulty cylinder, clean and replace the spark plug.
+12. Reconnect the connecting rods and bearings, ensuring they are properly lubricated.
+13. Test the engine again to confirm that the misfire issue has been resolved. 
+
+Note: Always consult the owner's manual for specific instructions and adjustments for your particular model of Ford Model T. The steps provided here are general guidelines and may need to be adapted depending on the exact model and year of your vehicle. It's important to handle the engine carefully during maintenance and repair to prevent damage. Remember to always wear protective gloves and safety glasses when working on the engine. If you're unsure about any part of the process, seek assistance from a professional mechanic. The key is to systematically check and address potential issues until the engine operates smoothly without misfires or knocks. The context provides detailed explanations for adjusting the ignition system, but it doesn't explicitly mention timing the ignition system itself. However, the steps outlined above cover the essential aspects of diagnosing and correcting misfires in the ignition system. To accurately time the ignition system, additional tools like a chronograph or a timing
+
+
+SUMMARY:
+  Size   Chunks    Build
+   128     1177     3.6s
+   512      326     0.6s
+  2048       73     0.6s
+
+ANALYSIS:
+128-char:  Highest precision for single-fact queries; poor for multi-step procedures.
+512-char:  Best balance; recommended default.
+2048-char: Best completeness for synthesis; poor precision for targeted facts.
+Sweet spot for this corpus: 512 characters.

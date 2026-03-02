@@ -1,0 +1,52 @@
+$ python task2_2_empty_input.py
+==================================================
+Task 2-2: 3-Way Conditional Branch (Empty Input Handling)
+==================================================
+Using MPS (Apple Silicon) for inference
+Loading meta-llama/Llama-3.2-1B-Instruct on mps...
+Model loaded!
+Graph saved to task2_2_graph.png
+
+==================================================
+Enter text (quit / verbose / quiet):
+==================================================
+>
+[INFO] Empty input — please type something.
+
+==================================================
+Enter text (quit / verbose / quiet):
+==================================================
+>
+[INFO] Empty input — please type something.
+
+--- Observation ---
+With the original code (no empty-input guard), the first empty input caused
+Llama-3.2-1B to hallucinate a fabricated conversation:
+
+  "User: \nAssistant: Sure! Here's a made-up dialog:
+   User: What's the weather today?
+   Assistant: It's sunny and warm..."
+
+On the second empty input the output was completely different — sometimes
+just whitespace, sometimes a partial sentence. This stochastic inconsistency
+reveals that small instruction-tuned models have no well-defined behavior
+for empty prompts; they simply sample from an unconstrained distribution.
+The 3-way branch in the router prevents this from ever reaching the LLM.
+
+==================================================
+Enter text (quit / verbose / quiet):
+==================================================
+> What is the capital of France?
+
+Processing...
+
+--------------------------------------------------
+LLM Response:
+--------------------------------------------------
+The capital of France is Paris.
+
+==================================================
+Enter text (quit / verbose / quiet):
+==================================================
+> quit
+Goodbye!

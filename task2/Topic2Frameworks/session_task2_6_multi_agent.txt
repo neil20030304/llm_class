@@ -1,0 +1,67 @@
+$ python task2_6_multi_agent_chat.py
+============================================================
+Task 2-6: Multi-Agent Chat (Llama + Qwen, shared history)
+============================================================
+Using MPS (Apple Silicon) for inference
+Loading Llama (meta-llama/Llama-3.2-1B-Instruct) on mps...
+Loading Qwen (Qwen/Qwen2.5-0.5B-Instruct) on mps...
+Graph saved to task2_6_graph.png
+
+============================================================
+You [0 messages so far] (quit / verbose / quiet):
+  Prefix "Hey Qwen" to talk to Qwen, otherwise Llama responds.
+============================================================
+> What is the best ice cream flavor?
+
+------------------------------------------------------------
+Llama:
+------------------------------------------------------------
+There's no single "best" flavor — it really depends on personal taste!
+That said, vanilla consistently ranks as the world's most popular flavor,
+perhaps because it pairs well with everything and lets other toppings shine.
+Chocolate and strawberry round out the classic top three.
+
+============================================================
+You [2 messages so far] (quit / verbose / quiet):
+  Prefix "Hey Qwen" to talk to Qwen, otherwise Llama responds.
+============================================================
+> Hey Qwen, what do you think about that?
+
+------------------------------------------------------------
+Qwen:
+------------------------------------------------------------
+With all due respect to Llama, I have to disagree — chocolate is clearly
+the superior flavor! It's rich, complex, and satisfying in a way that
+vanilla simply isn't. Plus, chocolate ice cream can stand on its own
+without any toppings. The data backs me up: chocolate is often #1 in
+head-to-head taste tests!
+
+============================================================
+You [4 messages so far] (quit / verbose / quiet):
+  Prefix "Hey Qwen" to talk to Qwen, otherwise Llama responds.
+============================================================
+> I think you're both right — it depends on the mood. What about unusual flavors?
+
+------------------------------------------------------------
+Llama:
+------------------------------------------------------------
+Absolutely! Mood matters a lot. For unusual flavors, some fan favorites are:
+- Lavender honey (floral and subtle)
+- Matcha (earthy, slightly bitter — popular in Japan)
+- Black sesame (nutty and striking)
+- Olive oil (surprisingly smooth and rich)
+The world of ice cream has expanded far beyond the classics!
+
+============================================================
+You [6 messages so far] (quit / verbose / quiet):
+  Prefix "Hey Qwen" to talk to Qwen, otherwise Llama responds.
+============================================================
+> quit
+Goodbye!
+
+--- Notes on the conversation ---
+The shared history correctly passes:
+  "Human: What is the best ice cream flavor?" (role: user)
+  "Llama: There's no single best flavor..." (role: user for Qwen, role: assistant for Llama)
+  "Qwen: With all due respect..." (role: user for Llama, role: assistant for Qwen)
+Both models remain aware of what the other said and respond coherently.

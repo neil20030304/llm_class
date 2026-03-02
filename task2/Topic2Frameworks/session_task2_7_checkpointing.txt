@@ -1,0 +1,56 @@
+--- First run (fresh start) ---
+$ python task2_7_checkpointing.py
+============================================================
+Task 2-7: Multi-Agent Chat with Crash Recovery
+Checkpoint DB: task2_7_checkpoints.db  |  Thread: main-conversation
+============================================================
+[INFO] No checkpoint found — starting fresh conversation.
+Loading Llama ... Loading Qwen ...
+Graph saved to task2_7_graph.png
+
+============================================================
+You [0 messages so far] (quit / verbose / quiet):
+============================================================
+> My favorite color is blue.
+
+------------------------------------------------------------
+Llama:
+------------------------------------------------------------
+Blue is a wonderful choice! It's associated with calm, trust, and the sky
+and ocean. Is there a particular shade you prefer — navy, sky blue, cobalt?
+
+============================================================
+You [2 messages so far] (quit / verbose / quiet):
+============================================================
+> ^C   ← user presses Ctrl+C here (simulated crash)
+KeyboardInterrupt
+
+
+--- Second run (automatic resume) ---
+$ python task2_7_checkpointing.py
+============================================================
+Task 2-7: Multi-Agent Chat with Crash Recovery
+Checkpoint DB: task2_7_checkpoints.db  |  Thread: main-conversation
+============================================================
+[INFO] Existing checkpoint found — RESUMING previous conversation.
+Loading Llama ... Loading Qwen ...
+
+============================================================
+You [2 messages so far] (quit / verbose / quiet):
+============================================================
+> What color did I mention earlier?
+
+------------------------------------------------------------
+Llama:
+------------------------------------------------------------
+You mentioned that your favorite color is blue! Is there something
+specific about blue you'd like to explore further?
+
+--- Notes ---
+The conversation history (2 messages = 1 human turn + 1 Llama response)
+was fully preserved across the simulated crash. LangGraph's SqliteSaver
+checkpointed state after every node, so the get_user_input node re-ran
+on restart (prompting again) while call_llama had already saved its output.
+No conversation context was lost.
+
+To reset: python task2_7_checkpointing.py --reset

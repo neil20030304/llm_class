@@ -1,13 +1,14 @@
 """
-make_test_video.py — generate a small synthetic test video for exercise2.py
-============================================================================
+make_test_video.py — generate a synthetic test video for exercise2.py
+======================================================================
 
-Produces a 20-second 1-fps clip (`test_video.mp4`) of an "empty room" with a
-crude human silhouette appearing between t=6s and t=14s, then leaving.
+Produces a 20-second 1-fps clip (`test_video.mp4`) of an "empty room" — a
+beige wall, a dark-blue floor, and a door frame on the right. A crude human
+silhouette (head + body + legs + arms) is drawn into the frame between
+t=6s and t=14s; the rest of the time the room is empty.
 
-This is a **pipeline smoke-test fixture**, NOT a substitute for the real
-2-minute video the task asks you to record. Use it to verify exercise2.py
-runs end-to-end before swapping in your own footage.
+The output is the input to `exercise2.py`, which samples it every 2 seconds
+and asks LLaVA whether a person is present in each sampled frame.
 """
 import cv2
 import numpy as np

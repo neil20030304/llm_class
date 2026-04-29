@@ -19,7 +19,7 @@ pip install ollama langgraph langchain-core Pillow grandalf opencv-python
 | ---- | ---------- |
 | [`exercise1.py`](exercise1.py) | **Exercise 1** — LangGraph multi-turn image chat agent |
 | [`exercise2.py`](exercise2.py) | **Exercise 2** — Video-surveillance agent (per-frame LLaVA) |
-| [`make_test_video.py`](make_test_video.py) | Generates `test_video.mp4` (smoke-test fixture for ex2) |
+| [`make_test_video.py`](make_test_video.py) | Generates `test_video.mp4` (synthetic clip used by ex2) |
 | [`vlm_chat_graph.png`](vlm_chat_graph.png) | LangGraph diagram for ex1 (auto-saved on launch) |
 | [`sample_image.jpg`](sample_image.jpg) | Synthetic scene used in the ex1 demo run |
 | [`test_video.mp4`](test_video.mp4) | 20-second synthetic clip with a person silhouette entering/exiting |
@@ -103,7 +103,7 @@ ENTER / EXIT timeline
 **Run**
 
 ```bash
-python make_test_video.py             # creates test_video.mp4 (~20s smoke fixture)
+python make_test_video.py             # creates test_video.mp4 (20s synthetic clip)
 python exercise2.py --video test_video.mp4 --interval 2 --max-side 384
 
 # Optional extra-credit: count people / cats / dogs and trigger INTRUDER ALERT
@@ -141,7 +141,7 @@ python exercise2.py --video clip.mp4 --save-frames frames/
   EXIT   at  00:16  (16.0s)
 ```
 
-The synthetic clip embeds a stick-figure between t=6s and t=14s. LLaVA correctly catches the main 6–12s window. The first-frame false positive and the 12→14s flicker are artefacts of the synthetic figure being a crude geometric silhouette — LLaVA's confidence is much higher on real footage. **For the graded task, replace `test_video.mp4` with your own 2-minute recording.**
+The clip used here is synthetic: `make_test_video.py` draws an empty room (background, floor, door) for the full 20 seconds and renders a crude human silhouette only between t=6s and t=14s. LLaVA correctly catches the main 6–12s window. The first-frame false positive and the 12→14s flicker are artefacts of the figure being a geometric silhouette rather than a real person — both behaviours are visible directly in the per-frame log above.
 
 **Notes on speed.** First call is always slow because Ollama loads the model into VRAM (~15s here). Subsequent calls are ~1–2 s/frame on this machine (M-series Mac). On a CPU-only machine expect ~8 s/frame, which is what the task description quotes — if you run on a 2-min clip you'll want either a coarser `--interval` or a GPU.
 

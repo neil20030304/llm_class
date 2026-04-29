@@ -1,3 +1,29 @@
+# Topic 4 — Exploring Tools
+
+This topic covers two things:
+
+1. **Conceptual comparison** of LangGraph's two tool-calling styles — the prebuilt `create_react_agent` vs. building a graph manually with `ToolNode` (Questions 1–5 below, with `react_agent_example.py` and `tool_example.py` as the reference implementations).
+2. **Hands-on 2-hour project** — a working application that puts the ReAct pattern to use.
+
+## 🧳 2-Hour Project: Smart Travel Planner
+
+A LangGraph ReAct agent that takes a destination, calls the **OpenWeatherMap One Call API 3.0**, and produces a personalized **packing list + activity recommendations** based on the forecast. Built with `gpt-4o-mini` and a single `@tool`-decorated weather function, wrapped in a small conversation graph (`input → call_agent → output → input`).
+
+**What it demonstrates:** `@tool` definitions, two-step API workflows (geocode → forecast), `.env` / API-key hygiene, ReAct-pattern reasoning over real external data, and conditional advice (temperature bands, rain probability, UV warnings).
+
+**Try prompts like:**
+- *"I'm planning a trip to Paris from June 15-20"*
+- *"Help me pack for Phoenix next week"* (triggers the extreme-heat warning branch)
+- *"What should I bring to London in late November?"* (rain-dominated forecast → indoor activities)
+
+➡️ **Full intro, architecture, and worked examples:** [`2-hour-project/README.md`](2-hour-project/README.md)
+➡️ **Setup walkthrough:** [`2-hour-project/SETUP_GUIDE.md`](2-hour-project/SETUP_GUIDE.md)
+➡️ **Product spec:** [`2-hour-project/PRD-SmartTravelPlanner.md`](2-hour-project/PRD-SmartTravelPlanner.md)
+
+A reference implementation also lives in [`2HourProject-example/`](2HourProject-example/) for comparison.
+
+---
+
 # Comparison of LangGraph Tool Calling Approaches
 
 

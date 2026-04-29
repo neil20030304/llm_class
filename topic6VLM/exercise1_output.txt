@@ -1,0 +1,49 @@
+Building LangGraph VLM chat agent…
+Graph diagram saved to: vlm_chat_graph.png
+
+============================================================
+  IMAGE CHAT AGENT  (LLaVA via Ollama + LangGraph)
+============================================================
+  Commands: 'quit' or 'q' to exit | 'verbose' / 'quiet'
+============================================================
+
+Enter the path to your image file:
+>   Resized 640×480 → 512×384 px, saved as: sample_image_resized.jpg
+✓  Image ready: sample_image_resized.jpg
+
+------------------------------------------------------------
+Ask your first question about the image  (or 'quit' to exit):
+> 
+[Thinking…]
+
+============================================================
+  LLaVA:
+============================================================
+ This is a digital image that features a simple scene of a single-story house with a red roof and brown shutters, set against a light blue sky. The house has a small chimney and a front door. To the left of the house stands a green tree with a clear outline, suggesting a stylized or pixelated representation rather than a realistic one. The sun appears as a simple yellow circle in the top right corner of the image, implying that it's daytime. There is no text present in the image. The overall style is minimalistic and cartoonish, with flat colors and basic outlines commonly associated with pixel art. 
+============================================================
+
+------------------------------------------------------------
+Turn 2 – ask another question  (or 'quit' to exit):
+> 
+[Thinking…]
+
+============================================================
+  LLaVA:
+============================================================
+ The roof of the house in the image is red. 
+============================================================
+
+------------------------------------------------------------
+Turn 3 – ask another question  (or 'quit' to exit):
+> 
+[Thinking…]
+
+============================================================
+  LLaVA:
+============================================================
+ Yes, there is a tree visible next to the house. It appears to be a green tree with a clear outline, indicating it's likely represented in a stylized manner, similar to pixel art or a simplistic drawing. 
+============================================================
+
+------------------------------------------------------------
+Turn 4 – ask another question  (or 'quit' to exit):
+> Goodbye!

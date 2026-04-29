@@ -1,0 +1,28 @@
+[mode] person-only  interval=2.0s  max_side=384px
+
+[video] test_video.mp4
+[video] fps=1.00  total_frames=20  duration=20.0s
+[video] sampling every 2 frames (~2.0s) → 11 samples
+[   0.0s] frame 000  PERSON  (15.6s)  | Yes
+[   2.0s] frame 001  empty   (1.3s)  | NO
+[   4.0s] frame 002  empty   (1.2s)  | No
+[   6.0s] frame 003  PERSON  (1.2s)  | Yes
+[   8.0s] frame 004  PERSON  (1.3s)  | Yes
+[  10.0s] frame 005  PERSON  (1.5s)  | Yes
+[  12.0s] frame 006  empty   (1.5s)  | No
+[  14.0s] frame 007  PERSON  (1.5s)  | Yes
+[  16.0s] frame 008  empty   (1.4s)  | No
+[  18.0s] frame 009  empty   (1.4s)  | No
+
+[done] processed 10 frames in 28.2s (2.8s/frame)
+
+============================================================
+  ENTER / EXIT TIMELINE
+============================================================
+  ENTER                   at  00:00  (0.0s)
+  EXIT                    at  00:02  (2.0s)
+  ENTER                   at  00:06  (6.0s)
+  EXIT                    at  00:12  (12.0s)
+  ENTER                   at  00:14  (14.0s)
+  EXIT                    at  00:16  (16.0s)
+============================================================

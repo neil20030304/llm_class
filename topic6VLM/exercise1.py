@@ -1,9 +1,9 @@
 # =============================================================================
-# exercise2.py
+# exercise1.py
 # Multi-turn image chat agent using LangGraph + Ollama (LLaVA)
 #
 # Usage:
-#   python exercise2.py
+#   python exercise1.py
 #   (requires: pip install ollama langgraph langchain-core Pillow grandalf)
 #   (requires: ollama pull llava)
 #

@@ -4,6 +4,18 @@
 > **Final project**, *LLM-Agent* (CS 6501, Spring 2026)
 > Xinyu Chen — University of Virginia
 
+## 📄 Final Report
+
+[**Download / view the full IEEE-format report (PDF) →**](./llmclass_final_report.pdf)
+
+<p align="center">
+  <a href="./llmclass_final_report.pdf">
+    <img src="./report_preview.png" alt="First page of the final report" width="560">
+  </a>
+  <br/>
+  <em>Click the preview to open the full PDF.</em>
+</p>
+
 [**Watch the 5-minute video →**](./LLM_AE_Forecasting_FinalVideo.mp4)
 
 ---

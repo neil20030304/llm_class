@@ -1,0 +1,63 @@
+
+======================================================================
+Drill 1 — search_papers_by_relevance: 'large language model agents'
+======================================================================
+  1. [2024] InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents
+      authors: Qiusi Zhan, Zhixiang Liang, Zifan Ying
+  2. [2025] Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning
+      authors: Sikuan Yan, Xiufeng Yang, Zuchao Huang
+  3. [2025] A Survey of Large Language Model Agents for Question Answering
+      authors: Murong Yue
+  4. [2025] TimeCAP: Learning to Contextualize, Augment, and Predict Time Series Events with Large Language Model Agents
+      authors: Geon Lee, Wenchao Yu, Kijung Shin
+  5. [2025] Large language model agents can use tools to perform clinical calculations
+      authors: Alex J. Goodell, Simon N. Chu, D. Rouholiman
+
+======================================================================
+Drill 2 — get_citations: BERT (ARXIV:1810.04805), 2023-01-01 onward
+======================================================================
+  Retrieved 10 citing papers (showing first 5):
+  1. [2026] Perplexity and pseudo-perplexity as objective measures of linguistic deficits in schizophrenia: Evidence from a Korean-Speaking cohort
+  2. [2026] NeuralMetric: An accurate and efficient real-time safety metric for automated driving systems
+  3. [2026] Leveraging semantic fusion and generative reasoning using large language models for context-aware and explainable sexism detection
+  4. [2026] Rumor detection based on the synergy of multi-scale spectral representation and cross-modal graph convolutional reasoning
+  5. [2026] Efficient spectral-temporal reconstruction of long-term satellite time series via temporal segments and mask-informed embedding
+
+======================================================================
+Drill 3 — get_paper(fields=references): 'Attention Is All You Need'
+======================================================================
+  Seed paper: Attention is All you Need  (2017)
+  41 references (sorted by year, showing first 15):
+
+    None  Le , Ilya Sutskever , Oriol Vinyals , and Lukasz Kaiser . Multitask sequence to sequence learning
+    1993  Building a Large Annotated Corpus of English: The Penn Treebank
+    1997  Long Short-Term Memory
+    2001  Gradient Flow in Recurrent Nets: the Difficulty of Learning Long-Term Dependencies
+    2006  Learning Accurate, Compact, and Interpretable Tree Annotation
+    2006  Effective Self-Training for Parsing
+    2009  Self-Training PCFG Grammars with Latent Annotations Across Languages
+    2013  Generating Sequences With Recurrent Neural Networks
+    2013  Fast and Accurate Shift-Reduce Constituent Parsing
+    2014  Grammar as a Foreign Language
+    2014  Adam: A Method for Stochastic Optimization
+    2014  Empirical Evaluation of Gated Recurrent Neural Networks on Sequence Modeling
+    2014  Sequence to Sequence Learning with Neural Networks
+    2014  Neural Machine Translation by Jointly Learning to Align and Translate
+    2014  Learning Phrase Representations using RNN EncoderâDecoder for Statistical Machine Translation
+    ... and 26 more
+
+======================================================================
+Notes on result shape
+======================================================================
+  - Every tool returns the structured payload at
+    result['structuredContent']['result']; mcp_client.tool_result()
+    grabs it directly. result['content'][i]['text'] is the same data
+    serialized one JSON object per item — usable but redundant.
+  - get_citations wraps each entry as {'citingPaper': {...}}; the other
+    two tools return flat paper dicts directly.
+  - get_paper exposes references as a *field* on the paper, not a
+    separate endpoint — request via fields=references.title,...
+  - When a paper's Semantic Scholar record is malformed (e.g. ReAct
+    ARXIV:2210.03629), asking for `references.title` makes the server
+    return isError=True. Always check tool_error() before parsing.
+

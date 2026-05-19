@@ -1,0 +1,65 @@
+[startup] fetching tool schemas from Asta MCP …
+[startup] 8 tools registered: get_paper, get_paper_batch, get_citations, search_authors_by_name, get_author_papers, search_papers_by_relevance, search_paper_by_title, snippet_search
+[startup] LLM: gpt-4o-mini
+
+======================================================================
+Q1: Find 3 recent papers about large language model agents and give me their titles.
+======================================================================
+  ↳ tool call: search_papers_by_relevance({"keyword": "large language model agents", "fields": "title", "limit": 3})
+    result: 490 chars
+
+A1: Here are three recent papers about large language model agents:
+
+1. "InjecAgent: Benchmarking Indirect Prompt Injections in Tool-Integrated Large Language Model Agents"
+2. "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning"
+3. "A Survey of Large Language Model Agents for Question Answering"
+
+======================================================================
+Q2: Who wrote 'Attention Is All You Need'? Just give me the author names.
+======================================================================
+  ↳ tool call: search_paper_by_title({"title": "Attention Is All You Need", "fields": "authors"})
+    result: 686 chars
+
+A2: The authors of "Attention Is All You Need" are:
+
+1. Ashish Vaswani
+2. Noam Shazeer
+3. Niki Parmar
+4. Jakob Uszkoreit
+5. Llion Jones
+6. Aidan N. Gomez
+7. Lukasz Kaiser
+8. I. Polosukhin
+
+======================================================================
+Q3: List 3 recent papers (2024 onward) that cite the original BERT paper (ARXIV:1810.04805).
+======================================================================
+  ↳ tool call: get_citations({"paper_id": "ARXIV:1810.04805", "fields": "title", "publication_date_range": "2024-01-01:", "limit": 3})
+    result: 662 chars
+
+A3: Here are three recent papers (2024 onward) that cite the original BERT paper (ARXIV:1810.04805):
+
+1. "Perplexity and pseudo-perplexity as objective measures of linguistic deficits in schizophrenia: Evidence from a Korean-Speaking cohort"
+2. "NeuralMetric: An accurate and efficient real-time safety metric for automated driving systems"
+3. "Leveraging semantic fusion and generative reasoning using large language models for context-aware and explainable sexism detection"
+
+======================================================================
+Q4: Summarize what the 'Attention Is All You Need' paper builds on by looking at 5 of its references.
+======================================================================
+  ↳ tool call: get_paper({"paper_id": "204e3073870fae3d05bcbc2f6a8e263d9b72e776", "fields": "references.title,references.year"})
+    result: 6024 chars
+
+A4: The paper "Attention Is All You Need" builds on several key references. Here are five notable ones:
+
+1. **"A Deep Reinforced Model for Abstractive Summarization" (2017)** - This reference contributes to the understanding of neural architectures for summarization tasks, informing the authors about reinforcement learning techniques to improve model performance.
+
+2. **"Convolutional Sequence to Sequence Learning" (2017)** - This work explores sequence-to-sequence models, paving the way for discussions on how convolutional structures can be utilized in natural language processing tasks.
+
+3. **"Massive Exploration of Neural Machine Translation Architectures" (2017)** - This paper examines various architectures in machine translation, aiding in the exploration of different strategies, including attention mechanisms for improved translation quality.
+
+4. **"A Structured Self-attentive Sentence Embedding" (2017)** - This research delves into self-attention mechanisms, which directly inform the core of the Transformer architecture presented in the paper, emphasizing the benefits of self-attention in encoding sentences.
+
+5. **"Effective Approaches to Attention-based Neural Machine Translation" (2015)** - This foundational work on attention mechanisms in neural machine translation provides critical insights and methodologies that influence the proposed attention-based model in "Attention Is All You Need."
+
+These references collectively influence the development of the Transformer model, particularly regarding attention mechanisms and their application in various natural language processing tasks.
+

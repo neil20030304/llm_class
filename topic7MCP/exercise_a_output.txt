@@ -1,0 +1,64 @@
+Discovered 8 tools from Asta MCP server
+
+======================================================================
+
+Tool: get_paper
+  Description: Get details about a paper by its id.
+  [REQUIRED] paper_id (string)
+  [optional] fields (string)  default='title'
+----------------------------------------------------------------------
+
+Tool: get_paper_batch
+  Description: Get details about a list of papers by their ids.
+  [REQUIRED] ids (array)
+  [optional] fields (string)  default='title'
+----------------------------------------------------------------------
+
+Tool: get_citations
+  Description: Get details about the papers that cite this paper (i.e. papers in whose bibliography this paper appears)
+  [REQUIRED] paper_id (string)
+  [optional] fields (string)  default='title'
+  [optional] limit (integer)  default=100
+  [optional] publication_date_range (string)  default=''
+----------------------------------------------------------------------
+
+Tool: search_authors_by_name
+  Description: Search for authors by name.
+  [REQUIRED] name (string)
+  [optional] fields (string)  default='name'
+  [optional] limit (integer)  default=100
+----------------------------------------------------------------------
+
+Tool: get_author_papers
+  Description: Get papers written by this author.
+  [REQUIRED] author_id (string)
+  [optional] paper_fields (string)  default='title'
+  [optional] limit (integer)  default=1000
+  [optional] publication_date_range (string)  default=''
+----------------------------------------------------------------------
+
+Tool: search_papers_by_relevance
+  Description: Search for papers by keyword relevance.
+  [REQUIRED] keyword (string)
+  [optional] fields (string)  default='title'
+  [optional] limit (integer)  default=50
+  [optional] publication_date_range (string)  default=''
+  [optional] venues (string)  default=''
+----------------------------------------------------------------------
+
+Tool: search_paper_by_title
+  Description: Search for papers by title.
+  [REQUIRED] title (string)
+  [optional] fields (string)  default='title'
+  [optional] publication_date_range (string)  default=''
+  [optional] venues (string)  default=''
+----------------------------------------------------------------------
+
+Tool: snippet_search
+  Description: Search for text snippets that most closely match the query.
+  [REQUIRED] query (string)
+  [optional] limit (integer)  default=20
+  [optional] venues (string)  default=''
+  [optional] paper_ids (string)  default=''
+  [optional] inserted_before (string)  default=''
+----------------------------------------------------------------------
